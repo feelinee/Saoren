@@ -24,16 +24,13 @@ define gui.show_name = True
 
 ## Versión del juego.
 
-define config.version = "1.0"
+define config.version = "omega lmao"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
 ## comillas triples y deja una línea en blanco entre párrafos.
 
-define gui.about = _p(""" Creditos:
-                      
-                      Musica: "A Storm at Camp" -  human gazpacho obtenido de Free Music Archive (CC BY)
-""")
+define gui.about = _p("Creditos\n\n:Musica:\n\n"A Storm at Camp" -  human gazpacho obtenido de Free Music Archive (CC BY)")
 
 
 ## Nombre breve del juego para ejecutables y directorios en la distribución.

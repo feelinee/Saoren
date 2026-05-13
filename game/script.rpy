@@ -6,40 +6,31 @@ define qn = Character("???", color="#e4dbb2")
 
 #Pavel Sprites
 
-image Pavel neutral:
-    "images/Pjs/Pavel Prologo Sprites/pavelnormal.png"
+image pavel neutral:
+    "images/Pjs/Pavel Prologo Sprites/pavel normal.png"
     zoom 0.30
-image Pavel triste:
-    "images/Pjs/Pavel Prologo Sprites/paveltriste.png"
+image pavel triste:
+    "images/Pjs/Pavel Prologo Sprites/pavel triste.png"
     zoom 0.30
-image Pavel enojado:
-    "images/Pjs/Pavel Prologo Sprites/pavelenojado.png"
+image pavel enojado:
+    "images/Pjs/Pavel Prologo Sprites/pavel enojado.png"
     zoom 0.30
-image Pavel dudoso:
-    "images/Pjs/Pavel Prologo Sprites/paveldudoso.png"
+image pavel dudoso:
+    "images/Pjs/Pavel Prologo Sprites/pavel dudoso.png"
     zoom 0.30
-image Pavel anaraith:
-    "images/Pjs/Pavel Prologo Sprites/pavelanaraith.png"
+image pavel anaraith:
+    "images/Pjs/Pavel Prologo Sprites/pavel anaraith.png"
     zoom 0.30
-image Pavel anaraith2:
-    "images/Pjs/Pavel Prologo Sprites/pavelanaraith2.png"
+image pavel anaraith2:
+    "images/Pjs/Pavel Prologo Sprites/pavel anaraith2.png"
     zoom 0.30
-
-#Fondos
-
-image Bosque: 
-    "images/Fondos/bgbosque.png"
-    zoom 0.95 yalign 0.05
-image Pieza:
-    "images/Fondos/bgpieza.jpg"
-    zoom 1.80
 
 label start:
 
     ##Escena 1:
     scene black
-    show Bosque zorder 0
-    play music "audio/bgbosque.mp3" loop fadein 1.0 volume 1
+    show bg bosque zorder 0
+    play music bgbosque fadein 1.0 volume 1
     "Los árboles hablan."
     "Cuando llega la noche y las almas se duermen, {w=0.3}en el silencio que invade el bosque." 
     "El viento se convierte en su voz y el psiturismo en sus palabras."
@@ -49,7 +40,7 @@ label start:
     "La leí una vez hace mucho tiempo." 
     "Escondido en la esquina menos apreciada, con los ojos entrecerrados tratando de distinguir las letras de un libro descolorido y polvoriento."
 
-    hide Bosque zorder 0
+    hide bg
     "\"Cuando dios caminaba por esta tierra escondido entre los hombres humildes, se cuenta una tragedia.\""
     "\"La fauna aquella, cautivada por el creador, pidio con misericordia\"" 
     "\"«Oh Dios mío por favor, por tu divinidad concederme este deseo..."
@@ -61,7 +52,7 @@ label start:
     "\"A cambio de su anhelo, Dios solo tuvo una petición, se agachó y le susurró.\""
     "\"Levantó el cuerpo e imponente pronunció «Como demostración de tu lealtad, juraras nunca revelar este secreto»\""
     "\"Y en un disfraz el devoto partió, su deseo se cumplió, y por años una vida de felicidad llevó. Con la dama de su sueños se casó y un hijo engendró.\""
-    play sound "audio/soundrain.mp3" loop volume 0.5
+    play sound soundrain loop volume 0.5
     "\"«Oh amor mio...» empezó, en una noche lluviosa a la luz de las velas.\""
     "\"«Tenemos un lazo eterno, pero traigo un peso en mi corazón.»\""
     "\"«Comparte tu tristeza» Le respondió, y el animal asintió.\""
@@ -79,7 +70,7 @@ label start:
     "\"Sin embargo hasta las bestias tienen el perdón de Dios, las criaturas que se esconden en el bosque perdieron su derecho a hablar y estar entre la gente.\"" 
     "\"Pero los engendros de dos patas que tienen sangre noble y pura en ellos serán otorgados de una segunda oportunidad para servir al señor y limpiar su sangre sucia.\""
 
-    show Bosque zorder 0
+    show bg bosque zorder 0
     "Puedo escuchar a los árboles hablar."
     "Pero no escucho sus poesías,{w=0.3} más bien, sus risas rechinan como una cama vieja y desgastada." 
     "Los golpeteos de las ramas suenan como los pasos de la oscuridad que me sigue detrás."
@@ -129,13 +120,13 @@ label start:
 
     ##Escena 2 (mover a cap 1):
     "Me despierto con los ojos cerrados, un frio punzante me eriza la piel."
-    show Pavel neutral at right
+    show pavel neutral at right
     mar "Pavel, vamos, tienes que despertar. "
-    show Pavel neutral at left
-    pavel "Mmmm okay."
-    show Pavel enojado at right
+    show pavel neutral at left
+    pav "Mmmm okay."
+    show pavel enojado at right
     mar "¿porqué tenemos el mismo sprite..?"
-    show Pavel dudoso at left
+    show pavel dudoso at left
     pav "qué."
     "Sin querer seguir su destino me sujeté fuerte de la pared con una mano."
     mar"Abre los ojos, dios."
@@ -144,4 +135,4 @@ label start:
     "La oscuridad de la habitación se me hacia ver tanto como veia cuando los tenia cerrados."
     "Así que los cerré." 
     pav "pico pal que lee xdxdxdxd"
-    show Pavel neutral at right
+    show pavel neutral at right
