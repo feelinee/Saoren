@@ -50,7 +50,7 @@ define gui.muted_color = '#512800'
 define gui.hover_muted_color = '#7a3d00'
 
 ## Colores del texto del diálogo y menú.
-define gui.text_color = "#000000"
+define gui.text_color = '#e4dbb2'
 define gui.interface_text_color = '#e4dbb2'
 
 
@@ -386,7 +386,7 @@ define gui.nvl_spacing = 15
 ## Posición, anchura y alineación de la etiqueta con el nombre del personaje
 ## hablante.
 define gui.nvl_name_xpos = 645
-define gui.nvl_name_ypos = 0
+define gui.nvl_name_ypos = 1
 define gui.nvl_name_width = 225
 define gui.nvl_name_xalign = 1.0
 
