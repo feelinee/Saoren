@@ -126,7 +126,7 @@ default preferences.text_cps = 25
 ## El retraso por defecto del auto-avance. Números más grandes indican esperas
 ## mayores. El rango válido es 0-30.
 
-default preferences.afm_time = 10
+default preferences.afm_time = 2
 
 
 ## Directorio de guardado ######################################################

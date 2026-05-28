@@ -4,7 +4,6 @@
 
 init offset = -1
 
-
 ################################################################################
 ## Estilos
 ################################################################################
@@ -1636,3 +1635,127 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+################################################################################
+## Pantalla personalizada
+################################################################################
+
+default text_mode = "default"
+default nvl_bg = "gui/nvl/nvl1.png"
+
+default text_xpos  = 120
+default text_ypos  = 140
+default text_xsize = 1680
+
+label mode_nadie:
+    $ text_mode  = "nadie"
+    $ nvl_bg     = "gui/nvl/nvl1.png"
+    $ text_xpos  = 120
+    $ text_ypos  = 140
+    $ text_xsize = 1680
+    return
+
+
+label mode_derecha:
+    $ text_mode  = "derecha"
+    $ nvl_bg     = "gui/nvl/nvl2.png"
+    $ text_xpos  = 180
+    $ text_ypos  = 140
+    $ text_xsize = 1000
+    return
+
+
+label mode_izquierda:
+    $ text_mode  = "izquierda"
+    $ nvl_bg     = "gui/nvl/nvl3.png"
+    $ text_xpos  = 750
+    $ text_ypos  = 140
+    $ text_xsize = 1000
+    return
+
+
+label mode_medio:
+    $ text_mode  = "medio"
+    $ nvl_bg     = "gui/nvl/nvl4.png"
+    $ text_xpos  = 750
+    $ text_ypos  = 140
+    $ text_xsize = 520
+    return
+
+screen nvl(dialogue, items=None):
+
+    $ _bg = nvl_bg if color_mode == "default" else nvl_bg.replace(".png", f"_{color_mode}.png")
+    add _bg xpos 0 ypos 0
+
+    window:
+        id "window"
+        background None
+        xpos 0
+        ypos 0
+        xsize config.screen_width
+        ysize config.screen_height
+
+        fixed:
+
+            viewport:
+                id "nvl_viewport"
+                xpos  text_xpos
+                ypos  text_ypos
+                xsize text_xsize
+                ysize (config.screen_height - text_ypos - 60)
+
+                mousewheel True
+                draggable True
+                yinitial 1.0
+
+                vbox:
+                    spacing 30
+                    xfill True
+
+                    for d in dialogue:
+
+                        window:
+                            id d.window_id
+                            background None
+                            xfill True
+
+                            vbox:
+                                spacing 5
+                                xfill True
+
+                                if d.who is not None:
+                                    text d.who:
+                                        id d.who_id
+                                        xmaximum text_xsize
+
+                                text d.what:
+                                    id d.what_id
+                                    xmaximum text_xsize
+                                    color color_texto.get(color_mode, "#e4dbb2")
+
+            if items is not None:
+                vbox:
+                    xalign 0.5
+                    yalign 0.85
+                    spacing 12
+
+                    for i in items:
+                        textbutton i.caption:
+                            action i.action
+
+style nvl_entry:
+    xfill True
+    ysize None
+
+style nvl_dialogue:
+    xpos 0
+    ypos 0
+
+style nvl_thought:
+    xpos 0
+    ypos 0        
+
+style nvl_label:
+    xpos 0
+    ypos 0             
+
