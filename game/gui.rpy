@@ -66,7 +66,7 @@ define gui.name_text_font = "editundo.ttf"
 define gui.interface_text_font = "BoldsPixels.ttf"
 
 ## El tamaño normal del texto del diálogo.
-define gui.text_size = 50
+define gui.text_size = 43
 
 ## El tamaño de los nombres de los personajes
 define gui.name_text_size = 70
