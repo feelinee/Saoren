@@ -45,8 +45,8 @@ define build.name = "Saoren"
 ## muestran al reproductor de forma predeterminada. Establecer uno de estos en
 ## False ocultará el mezclador apropiado. 
 
-define config.has_sound = True
-define config.has_music = True
+define config.has_sound = False
+define config.has_music = False
 define config.has_voice = False
 
 
@@ -120,7 +120,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## infinito; cualquier otro número indica el número de caracteres por segundo
 ## que se mostrarán.
 
-default preferences.text_cps = 25
+default preferences.text_cps = 15
 
 
 ## El retraso por defecto del auto-avance. Números más grandes indican esperas

@@ -1679,7 +1679,7 @@ label mode_medio:
     $ nvl_bg     = "gui/nvl/nvl4.png"
     $ text_xpos  = 750
     $ text_ypos  = 140
-    $ text_xsize = 520
+    $ text_xsize = 450
     return
 
 screen nvl(dialogue, items=None):
