@@ -14,6 +14,6 @@ label menu_rutas:
             jump luctus_prologue
         "magnus":
             nvl clear
-            "no existe lol"
             $ persistent.luctus_compl = False
+            "no existe lol"
             pass
