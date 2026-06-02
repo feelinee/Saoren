@@ -373,11 +373,11 @@ define gui.nvl_borders = Borders(0, 15, 0, 30)
 
 ## Máximo número de entradas en modo NVL que Ren'Py presentará. Al presentar más
 ## entradas, se borrarán las más antiguas.
-define gui.nvl_list_length = 6
+define gui.nvl_list_length = 0
 
 ## Altura de una entrada en modo NVL. Ajusta a 'None' para que las entradas
 ## ajusten la altura dinámicamente.
-define gui.nvl_height = 173
+define gui.nvl_height = None
 
 ## Espacio entre entradas en modo NVL cuando 'gui.nvl_height' es None, y entre
 ## las entradas en modo NVL y el menú en modo NVL.
@@ -469,7 +469,7 @@ init python:
         gui.file_slot_rows = 2
 
         ## Modo-NVL
-        gui.nvl_height = 255
+        gui.nvl_height = None
 
         gui.nvl_name_width = 458
         gui.nvl_name_xpos = 488
