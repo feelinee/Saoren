@@ -23,6 +23,14 @@ define color_texto = {
     "green" : "#9ec1d1"
 }
 
+define color_enfocado = {
+    "default" : '#cc6600',
+    "blue"    : '#0007cc',
+    "red"     :  '#cc0000',
+    "orange" : '#cc6600',
+    "green" :  '#00b1cc'
+}
+
 ## Voces
 
 init -1 python:
