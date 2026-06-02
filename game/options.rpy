@@ -24,7 +24,7 @@ define gui.show_name = True
 
 ## Versión del juego.
 
-define config.version = "omega lmao"
+define config.version = "v1"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
