@@ -80,7 +80,7 @@ label luctus_negatio:
     "— {s}2 Manzanas{/s}{fast}{w=0.3}{nw}"
     "— {s}1kg de harina{/s}{fast}{w=0.3}{nw}"
     "— {s}Huevo{/s}{w=0.3}{nw}"
-    "— {s}Mantequilla{/s}{w=0.3}{nw}}"
+    "— {s}Mantequilla{/s}{w=0.3}{nw}"
     "— {s}2 de pan{/s}{fast}{w=0.3}{nw}"
     "— Ramo de flores{fast}{w=0.3}{nw}"
     "— Comida para gatos{fast}"
@@ -103,6 +103,11 @@ label luctus_negatio:
 
 label negatio_carne:
 
+    $ color_mode = "orange"
+    scene bg pavcille
+    extend " primero voy a ir al puesto de flores."
+    jump mapa
+
     #Pavel llega al puesto de carne y compra la comida de gato, cuando le pasa el dinero, el vendedor le susurra que tenga cuidado, pues nota que alguien venia con pavel y lo estaba mirando desde lejos, pavel se asusta y decide ir rapido al otro puesto para irse.
 
     #Antes de llegar a la tienda de flores, nota por el rabillo del ojo a la persona que lo está siguiendo, es bastante alto y aunque no parece tner mucha masa muscular, es suficiente para intimidarlo, decide meterse entre la muchedumbre.
@@ -121,6 +126,10 @@ label negatio_carne:
 
 label negatio_flores:
 
+    extend " primero voy a ir al puesto de flores."
+    jump mapa
+
+    #Pavel va al puesto de flores y pregunta por el precio, viendo que ya se hizo tarde se resigna y compra las flores, prometiendo para si mismo comprarlas otro dia.
 
 
 
@@ -142,4 +151,4 @@ label negatio_flores:
 #pav "pico pal que lee xdxdxdxd"
 #show pavel neutral at right
 #"La pregunta cae de los árboles como la nieve."
-
+#El libro que encuentra pavel mientras limpia es el que compro anaraith antes de morir, lo abre para ver de qué se trata y se rie con asco. Es el libro del prólogo.

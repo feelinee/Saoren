@@ -149,5 +149,6 @@
                 }
             }
         ]
-    }
+    },
+    "renpyWarp.sdkPath": "~/Programas/Ren'py"
 }
