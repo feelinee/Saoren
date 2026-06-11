@@ -12,6 +12,7 @@ default mag_libro = False
 #Mapa
 
 label mapa:
+
     if dia_mapa == 1:
         $ lugares = ["mercado", "libreria"]
     elif dia_mapa == 2:

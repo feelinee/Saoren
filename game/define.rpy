@@ -28,7 +28,7 @@ define color_enfocado = {
     "blue"    : '#0007cc',
     "red"     :  '#cc0000',
     "orange" : '#cc6600',
-    "green" :  '#00b1cc'
+    "green" :  '#10b777'
 }
 
 ## Voces
@@ -84,3 +84,5 @@ image pavel anaraith2:
 image side arboles = "images/Side/arboles.png"
 image side pisadas = "images/Side/pisadas.png"   
 image side flores = "images/Side/asfodelos.png"    
+
+##

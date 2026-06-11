@@ -311,6 +311,8 @@ screen navigation():
 
         textbutton _("Opciones") action ShowMenu("preferences")
 
+        textbutton _("Galería") action ShowMenu("gallery")
+
         if _in_replay:
 
             textbutton _("Finaliza repetición") action EndReplay(confirm=True)
@@ -1683,7 +1685,7 @@ label mode_medio:
     return
 
 screen nvl(dialogue, items=None):
-
+    
     $ _bg = nvl_bg if color_mode == "default" else nvl_bg.replace(".png", f"_{color_mode}.png")
     add _bg xpos 0 ypos 0
 
@@ -1742,6 +1744,7 @@ screen nvl(dialogue, items=None):
                     for i in items:
                         textbutton i.caption:
                             action i.action
+                            text_hover_color color_enfocado.get(color_mode, "#cc6600")
 
 style nvl_entry:
     xfill True
@@ -1759,3 +1762,78 @@ style nvl_label:
     xpos 0
     ypos 0             
 
+################################################################################
+## Galeria
+################################################################################
+
+init python:
+    g = Gallery()
+    g.navigation = True
+
+    g.button("gato")
+    g.image("bg gato")
+    g.unlock("bg gato")
+
+    g.button("pavcille")
+    g.image("bg pavcille")
+    g.unlock("bg pavcille")
+    
+
+screen gallery:
+    tag menu
+    add "bg bosque"
+    grid 2 2:
+        xfill True
+        yfill True
+        spacing 1
+
+        imagebutton:
+            idle "extras/galeria/gallery_cgs.png"
+            action ShowMenu("gallery_cgs")
+            xalign 0.5
+            yalign 0.5
+
+        imagebutton:
+            idle "extras/galeria/gallery_bgs.png"
+            action ShowMenu("gallery_bgs")
+            xalign 0.5
+            yalign 0.5
+
+        imagebutton:
+            idle "extras/galeria/gallery_sprites.png"
+            action ShowMenu("gallery_bgs")
+            xalign 0.5
+            yalign 0.5
+
+        imagebutton:
+            idle "extras/galeria/gallery_extras.png"
+            action ShowMenu("gallery_bgs")
+            xalign 0.5
+            yalign 0.5
+
+    textbutton "Return" action Return() xalign 0.03 yalign 0.03
+
+screen gallery_bgs:
+    
+    tag menu
+    add "bg pavcille"
+    grid 3 2:
+        xfill True
+        yfill True
+        spacing 30
+    
+        add g.make_button("gato", "extras/galeria/gato.png", xalign=0.5, yalign=0.5)
+
+    textbutton "Return" action ShowMenu("gallery") xalign 0.03 yalign 0.03
+
+screen gallery_cgs:
+    tag menu
+    add "bg cuento"
+    grid 3 2:
+        xfill True
+        yfill True
+        spacing 30
+
+        add g.make_button("pavcille","extras/galeria/pavcille.png", xalign=0.5, yalign=0.5)
+
+    textbutton "Return" action ShowMenu("gallery") xalign 0.03 yalign 0.03

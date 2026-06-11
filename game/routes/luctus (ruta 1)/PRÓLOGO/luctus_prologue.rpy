@@ -46,7 +46,7 @@
     "—Así que lo diré.{w=0.2} Confío en ti, y en que junto a mí, a la tumba te lo llevarás."
     "Sus ojos se encontraron con los de ella en la penumbra,{w=0.2} y él abrió la boca para pronunciar lo que {color=#f00}nunca debía ser pronunciado.{/color}"
     stop music
-    call seq_prólcensura
+    call seq_prolcensura
     nvl clear
     play audio pageturn volume 0.7
 
@@ -127,7 +127,7 @@
     "Puedo ver la salida desde donde estoy, la nieve blanca y nueva me llama a acercame y poner mi marca."
 
     $ _history = False
-    call seq_prólpav1
+    call seq_prolpav1
 
     "Puedo ver la salida desde donde estoy, la nieve blanca y nueva me llama a acercame y poner mi marca.{fast}{nw}"
     $ _history = True
