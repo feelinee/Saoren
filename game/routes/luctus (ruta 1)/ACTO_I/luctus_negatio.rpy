@@ -95,18 +95,20 @@ label luctus_negatio:
     menu:
         "El puesto de flores":
             $ asfo_ramo = True
-            jump negatio_flores
+            call negatio_flores
 
         "El puesto de carne":
             $ gato_comi = True
-            jump negatio_carne
+            call negatio_carne
+    
+    jump mapa
 
 label negatio_carne:
 
     $ color_mode = "orange"
     scene bg pavcille
-    extend " primero voy a ir al puesto de flores."
-    jump mapa
+    extend " primero voy a ir al puesto de carne."
+    return
 
     #Pavel llega al puesto de carne y compra la comida de gato, cuando le pasa el dinero, el vendedor le susurra que tenga cuidado, pues nota que alguien venia con pavel y lo estaba mirando desde lejos, pavel se asusta y decide ir rapido al otro puesto para irse.
 
@@ -127,7 +129,8 @@ label negatio_carne:
 label negatio_flores:
 
     extend " primero voy a ir al puesto de flores."
-    jump mapa
+    return
+    
 
     #Pavel va al puesto de flores y pregunta por el precio, viendo que ya se hizo tarde se resigna y compra las flores, prometiendo para si mismo comprarlas otro dia.
 

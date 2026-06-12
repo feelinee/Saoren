@@ -1,7 +1,10 @@
 ﻿label luctus_prologue:
-    scene bg bosque
+
     $ color_mode = "orange"
     call mode_izquierda
+    call seq_prolpav1
+
+    scene bg bosque
     play music bgbosque fadein 1 volume 1
     window show
     "Cuando llega la noche y las almas se duermen, los árboles hablan en el silencio que invade el bosque. {w}\nEl viento se convierte en su voz y el psiturismo en sus palabras."
@@ -125,12 +128,6 @@
     nvl clear
 
     "Puedo ver la salida desde donde estoy, la nieve blanca y nueva me llama a acercame y poner mi marca."
-
-    $ _history = False
-    call seq_prolpav1
-
-    "Puedo ver la salida desde donde estoy, la nieve blanca y nueva me llama a acercame y poner mi marca.{fast}{nw}"
-    $ _history = True
     "{size=+20}{cps=11}. . ."
     "{cps=15}Pero me doy la vuelta."
     "Hacia ese sendero de pisadas superpuestas, borrosas por la nieve que ya cayó."
