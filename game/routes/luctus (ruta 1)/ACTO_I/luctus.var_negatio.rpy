@@ -9,6 +9,8 @@ default asfo_ramo = False
 default asfo_flor = False
 default mag_libro = False
 
+default pav_dur = False
+
 #Mapa
 
 label mapa:
