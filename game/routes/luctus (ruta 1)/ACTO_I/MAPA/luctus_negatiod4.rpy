@@ -49,12 +49,11 @@ label bosque_d4t:
 label libreria_d4:
     "dia4 libreria"
     if mag_libro:
-        "Voy a dejar el libro que me encontré, no me gusta verlo en la casa."
         $ mag_libro_entr= True
+        "Voy a dejar el libro que me encontré, no me gusta verlo en la casa."
         #si entrega el libro le vienen recuerdos de magnus, y se ablanda si se encuentra con él después, si no lo entrega, cuando se encuentra con él, no recuerda nada y le lanza el libro en la cara.
-        return
     else:
+        "no tengo el libro xd"
 
     $ dia_mapa += 1
     jump mapa
-    return

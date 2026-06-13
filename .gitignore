@@ -27,3 +27,5 @@
 
 /.vscode
 /game/.vscode
+/*.kra~
+vscode_renpy_warp_*.rpe*

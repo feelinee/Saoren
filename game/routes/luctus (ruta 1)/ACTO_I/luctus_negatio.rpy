@@ -133,7 +133,9 @@ label negatio_flores:
 
     #Pavel va al puesto de flores y pregunta por el precio, viendo que ya se hizo tarde se resigna y compra las flores, prometiendo para si mismo comprarlas otro dia.
 
-
+label negatio_escena2:
+    "escena 2 yay"
+    return
 
 ##Escena 2 (mover a cap 1):
 #"Me despierto con los ojos cerrados, un frio punzante me eriza la piel."
