@@ -42,7 +42,7 @@ label mapa:
             if dia_mapa == 1:
                 jump libreria_d1
             elif dia_mapa == 4:
-                jump libreria_4
+                jump libreria_d4
             elif dia_mapa == 6:
                 jump negatio_escena2
 
