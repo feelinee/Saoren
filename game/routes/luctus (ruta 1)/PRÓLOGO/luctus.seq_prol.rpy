@@ -28,6 +28,7 @@ label seq_prolcensura:
     return
 
 label seq_prolpav1:
+    
     nvl clear
     window hide
     scene bg ciudad1:
