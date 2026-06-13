@@ -1,5 +1,11 @@
-label mercado_d1:
+label bosque_d2:
+    "dia2"
+    $ dia_mapa += 1
+    jump negatio_d3
     return
 
-label libreria_d1:
+label puerto_d2:
+    "dia2"
+    $ dia_mapa += 1
+    jump negatio_d3
     return

@@ -1,5 +1,6 @@
 label luctus_negatio:
     nvl clear
+    call mode_nadie
     scene bg gato
     show text "{color=#000000}«Tu y yo no somos tan distintos...»{/color}"
     pause
@@ -94,17 +95,15 @@ label luctus_negatio:
     "Al final creo que..."
     menu:
         "El puesto de flores":
-            $ asfo_ramo = True
             call negatio_flores
 
         "El puesto de carne":
-            $ gato_comi = True
             call negatio_carne
     
     jump mapa
 
 label negatio_carne:
-
+    $ gato_comi = True
     $ color_mode = "orange"
     scene bg pavcille
     extend " primero voy a ir al puesto de carne."
@@ -116,7 +115,7 @@ label negatio_carne:
 
     #Destacando por su altura como la persona lo empieza a buscar con la mirada, por su cara tapada asume que es alguien de la iglesia y que está en peligro.
 
-    #Mira nuevamente al rededor y no lo ve más, por lo que un poco más tranquilo decide irse a su casa, no obstante, este chico lo agarra del brazo con fuerza.
+    #Mira nuevamentse al rededor y no lo ve más, por lo que un poco más tranquilo decide irse a su casa, no obstante, este chico lo agarra del brazo con fuerza.
 
     #Pavel sin saber que hacer intenta safarse sin exito, sin poder correr ni gritar se paraliza del miedo y empieza a temblar, apretando el brazo del extraño con las uñas.
 
@@ -127,7 +126,7 @@ label negatio_carne:
     #Marcille le dicen que se alejen de la multitud para hablar bien y se van, pavel camina para calmarse, e inconsientemente empieza a caminar hacia donde se dirigia originalmente.
 
 label negatio_flores:
-
+    $ ana_tumba= True
     extend " primero voy a ir al puesto de flores."
     return
     
