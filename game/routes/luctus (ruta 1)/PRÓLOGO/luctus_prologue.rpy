@@ -1,5 +1,6 @@
 ﻿label luctus_prologue:
 
+    stop music
     $ color_mode = "orange"
     call mode_izquierda
     call seq_prolpav1
@@ -15,7 +16,7 @@
     scene bg cuento
     $ color_mode = "blue"
     call mode_derecha
-    "En los dias en que Dios caminaba por esta tierra,{w=0.3} cuando el polvo del camino manchaba sus sandalias como las de cualquier mortal,{w=0.3} se cuenta una tragedia que pocos se atreven a contar." 
+    "En los dias en que Dios caminaba por esta tierra,{w=0.3} cuando el polvo del camino manchaba sus sandalias como las de cualquier mortal,{w=0.3} se habla una tragedia que pocos se atreven a contar." 
     "La fauna aquella,{w=0.2} criatura fiel entre las criaturas,{w=0.2} lo contempló desde la maleza.{w=0.3} En su pecho,{w=0.2} escondia algo que ninguna bestia había sentido antes."
     "Amor{w}, por una hija de hombre,{w=0.2} una mujer de voz suave y manos callosas que olían a tierra mojada."
     "Se postró ante los pies de su divinidad y rogó." 
