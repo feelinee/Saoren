@@ -13,7 +13,7 @@
 ##
 ## El _() que rodea la cadena de texto la señala como traducible.
 
-define config.name = _("Saorén: Sombras de la Libertad")
+define config.name = "{size= 190}SAORÉN\n{size= 65}Sombras de la Libertad"
 
 
 ## Determina si el título dado más arriba se muestra en el menú principal.
@@ -24,7 +24,7 @@ define gui.show_name = True
 
 ## Versión del juego.
 
-define config.version = "v1"
+define config.version = "BETA 0.1"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
@@ -49,7 +49,6 @@ define config.has_sound = False
 define config.has_music = False
 define config.has_voice = False
 
-
 ## Para permitir al usuario probar el volumen de los canales de sonido o voz,
 ## descomenta la línea más abajo y ajústala a un sonido de ejemplo.
 
@@ -61,7 +60,7 @@ define config.has_voice = False
 ## el menú principal. Este archivo seguirá sonando en el juego hasta que sea
 ## detenido o se reproduzca otro archivo.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+#define config.main_menu_music = "Simbiosis.mp3"
 
 
 ## Transiciones ################################################################

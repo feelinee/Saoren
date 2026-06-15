@@ -84,6 +84,7 @@ label seq_prolpav1:
     window show
         
     play audio bell volume 0.5
+    play music armydreamers volume 0.8
     "..."
     "Mis ojos recorren las calles como mis pies lo han hecho tantas veces antes.{w=0.3} Mis pupilas se detienen en las fachadas de los edificios,{w=0.2} en las caras de las personas{w=0.2}, y no reconozco a nadie,{w=0.3} no reconozco nada."
     "Me siento desorientado entre una multitud ruidosa, que parece gritar entre murmullos burlas que se sobreponen hasta convertirse en chillidos grotescos." 
@@ -141,6 +142,7 @@ label seq_prolpav1:
     window hide None
     scene black
     pause 0.2
+    stop music
     play audio bell volume 1.0
     pause 1.0
     nvl clear

@@ -352,10 +352,25 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
+init python:
+    renpy.music.register_channel("menumusic", mixer="music", loop=True)
+
+default persistent.menu_music_muted = False
+
+init python:
+    def toggle_menu_mute():
+        persistent.menu_music_muted = not persistent.menu_music_muted
+        renpy.music.set_volume(0.0 if persistent.menu_music_muted else 1.0, channel="menumusic")
+
 screen main_menu():
 
     ## Esto asegura que cualquier otra pantalla de menu es remplazada.
     tag menu
+
+    on "show" action [
+        Play("menumusic", "audio/Simbiosis.mp3"),
+        Function(renpy.music.set_volume, 0.0 if persistent.menu_music_muted else 1.0, channel="menumusic")
+    ]
 
     add gui.main_menu_background
 
@@ -368,6 +383,12 @@ screen main_menu():
     use navigation
 
     if gui.show_name:
+
+        textbutton _("Silenciar"):
+            action Function(toggle_menu_mute)
+            style "mute_all_button"
+            xpos 1730
+            ypos 20
 
         vbox:
             style "main_menu_vbox"
@@ -419,10 +440,13 @@ style main_menu_version:
 
 screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
+
     style_prefix "game_menu"
+
 
     if main_menu:
         add gui.main_menu_background
+
     else:
         add gui.game_menu_background
 
@@ -771,9 +795,9 @@ screen preferences():
 
                 vbox:
 
-                    label _("Veloc. texto")
+                    #label _("Veloc. texto")
 
-                    bar value Preference("text speed")
+                    #bar value Preference("text speed")
 
                     label _("Veloc. autoavance")
 
@@ -781,11 +805,17 @@ screen preferences():
 
                 vbox:
 
-                    if config.has_music:
-                        label _("Volumen música")
+                    label _("Volumen General")
+                    hbox:
+                        bar value Preference("mixer main volume")
 
+                    if config.has_music:
+
+                        label _("Volumen música")
                         hbox:
                             bar value Preference("music volume")
+
+
 
                     if config.has_sound:
 
@@ -807,12 +837,11 @@ screen preferences():
                             if config.sample_voice:
                                 textbutton _("Prueba") action Play("voice", config.sample_voice)
 
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
+                    null height gui.pref_spacing
 
-                        textbutton _("Silenciar todo"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
+                    textbutton _("Silenciar"):
+                        action Preference("all mute", "toggle")
+                        style "mute_all_button"
 
 
 style pref_label is gui_label

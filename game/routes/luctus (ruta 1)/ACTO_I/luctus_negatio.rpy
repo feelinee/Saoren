@@ -1,18 +1,18 @@
 label luctus_negatio:
     nvl clear
-    call mode_nadie
-    scene bg gato
-    show text "{color=#000000}«Tu y yo no somos tan distintos...»{/color}"
+    show fondo negro
+    show text "«Tu y yo no somos tan distintos...»"
     pause
-    show text "{color=#000000}«¿No?»{/color}"
+    show text "«¿No?»"
     pause
-    show text "{color=#000000}«...»{/color}"
+    show text "«...»"
     pause
     hide text
+    hide fondo negro
 
+    scene bg gato
     $ color_mode = "green"
     call mode_medio
-    window show
     "El gato,{w=0.3} que no parece haber entendido mi duda,{w=0.3} se restriega por mi pierna maullando para que lo acaricie."
     "Le susurro un maullido devuelta{cps=2.0}... {cps=12}pero no me responde,{w=0.2} en vez de eso muestra su abdomen,{w=0.2} y yo me agacho para acariciarlo."
     "—Hey chico,{w=0.3} ya está tu pedido."

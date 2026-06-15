@@ -58,6 +58,9 @@ init -1 python:
         return type_sound
 # Images
 
+image fondo negro:
+    "gui/nvl/nvl4.png"
+
 ## Pavel Sprites
 
 image pavel neutral: 
