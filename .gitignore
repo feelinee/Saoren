@@ -25,7 +25,7 @@
 /dialogue.txt
 /strings.json
 
-/.vscode
-/game/.vscode
-/*.kra~
+/game/archivos krita/
+/**/*.kra~
+/game/**/*.png~
 vscode_renpy_warp_*.rpe*

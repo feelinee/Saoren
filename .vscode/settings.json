@@ -3,7 +3,15 @@
         "**/*.rpyc": true,
         "**/*.rpa": true,
         "**/*.rpymc": true,
-        "**/cache/": true
+        "**/cache/": true,
+        "**/*.txt": true,
+        "**/libs/": true,
+        "**/saves/": true,
+        "**/tl/": true,
+        "**/fonts/": true,
+        "**/archivos krita/": true,
+        "**/*.kra": true,
+        "**/*.png~": true
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
