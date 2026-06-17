@@ -139,6 +139,24 @@ label seq_prolpav1:
     "{cps=6}Tengo que, \n\n{cps=12}Tengo que,{nw}"
     extend "\n\nTengo {fast}{cps=6}que, \n\nTengo {fast}{cps=6}que,{nw}"
     extend "\n\nTengo que,{fast}{nw} \n\nTengo que,{fast}{nw}"
+    "Quiero gritar,{w=0.3} pero las llamas me enfrian los huesos y el humo me quema la garganta convirtiendo las palabras en cenizas."
+    nvl clear
+
+    play audio bell volume 0.9
+    "..."
+
+    "El fuego está caliente,{w=0.3} le quema la punta de los dedos,{w=0.3} le quema el cuerpo.{w=0.3} La quema.{w=0.3} El olor es insoportable y mis pies no se mueven y mis manos no se mueven y yo no me muevo y el olor sigue ahí y el olor no para." 
+    "{cps=24}Quiero correr hacia delante,{w=0.3} {color=#f00}quiero devolverme y huir.{/color}{w=0.3}" 
+    "El té siempre se le olvidaba.{w=0.3} Lo dejaba reposar porque estaba muy caliente, cuando se acordaba ya estaba helado y lo empujaba a un lado como si no fuera culpa suya."
+    "{cps=6}Es culpa mía."
+
+    "{cps=12}El humo sube y la multitud no se calla,{w=0.3} algo en mi pecho se aprieta como si alguien metiera la mano y cerrara el puño,{cps=24}{w=0.2} y yo sigo sin moverme,{cps=36}{w=0.1} sigo sin moverme,{cps=48} sigo{nw}"
+    nvl clear
+
+    "{cps=6}Quiero sacarla de ahí,{w=0.3}{cps=12} tengo que,"
+    "{cps=6}Tengo que, \n\n{cps=12}Tengo que,{nw}"
+    extend "\n\nTengo {fast}{cps=6}que, \n\nTengo {fast}{cps=6}que,{nw}"
+    extend "\n\nTengo que,{fast}{nw} \n\nTengo que,{fast}{nw}"
     window hide None
     scene black
     pause 0.2
