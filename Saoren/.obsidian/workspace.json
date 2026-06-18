@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f6cc28d2cfb6ee36",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "ed96fc4c47800cab",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,26 +20,8 @@
               "icon": "lucide-file",
               "title": "Estado"
             }
-          },
-          {
-            "id": "f3605913931e5bfd",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "05 Animaciones/Escena 1 - Animación/Escena 1.canvas",
-                "viewState": {
-                  "x": -540,
-                  "y": 1606.4999999999995,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Escena 1"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,16 +184,16 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "f3605913931e5bfd",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "03 Narrativa/00 Prologo/Escena 1.md",
+    "00 Desarrollo/1. Indice.md",
+    "00 Desarrollo/Estado.md",
+    "05 Animaciones/Escena 1 - Animación/Escena 1.canvas",
     "Pasted image 20260616002654 1.png",
     "Pasted image 20260616002654.png",
-    "03 Narrativa/00 Prologo/Escena 1.md",
-    "05 Animaciones/Escena 1 - Animación/Escena 1.canvas",
     "05 Animaciones/Escena 1 - Animación",
     "05 Animaciones/Escena 1 - Animación/1.png",
-    "00 Desarrollo/Estado.md",
-    "00 Desarrollo/01 Indice.md",
     "05 Animaciones/Sin título.base",
     "05 Animaciones",
     "00 Desarrollo/Referencias.md",
