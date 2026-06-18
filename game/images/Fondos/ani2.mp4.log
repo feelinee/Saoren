@@ -1,0 +1,32 @@
+/usr/bin/ffmpeg -hide_banner -y -y -r 12 -start_number 0 -start_number_range 1 -i /home/feelinee/Juegos/fotograma%04d.png -crf 23 -preset medium -profile:v baseline -pix_fmt yuv420p /home/feelinee/Juegos/Saoren Sombras de la Libertad/game/images/Fondos/ani2.mp4
+=====================================================
+Input #0, image2, from '/home/feelinee/Juegos/fotograma%04d.png':
+  Duration: 00:00:03.12, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc, gbr/unknown/unknown), 1920x1080 [SAR 11811:11811 DAR 16:9], 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x55e1bc2bd240] using SAR=1/1
+[libx264 @ 0x55e1bc2bd240] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x55e1bc2bd240] profile Constrained Baseline, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0x55e1bc2bd240] 264 - core 165 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=0 ref=3 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=18 lookahead_threads=3 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=0 keyint=250 keyint_min=12 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/home/feelinee/Juegos/Saoren Sombras de la Libertad/game/images/Fondos/ani2.mp4':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 12 fps, 12288 tbn
+      Metadata:
+        encoder         : Lavc61.19.101 libx264
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=   24 fps=0.0 q=26.0 size=       0KiB time=00:00:02.00 bitrate=   0.2kbits/s speed=3.98x    [out#0/mp4 @ 0x55e1bc2bdd40] video:374KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.305048%
+frame=   78 fps=0.0 q=-1.0 Lsize=     375KiB time=00:00:06.50 bitrate= 472.3kbits/s speed=9.88x    
+[libx264 @ 0x55e1bc2bd240] frame I:1     Avg QP:12.01  size: 53890
+[libx264 @ 0x55e1bc2bd240] frame P:77    Avg QP:11.85  size:  4260
+[libx264 @ 0x55e1bc2bd240] mb I  I16..4: 74.8%  0.0% 25.2%
+[libx264 @ 0x55e1bc2bd240] mb P  I16..4:  1.2%  0.0%  1.9%  P16..4:  0.7%  0.3%  0.1%  0.0%  0.0%    skip:95.8%
+[libx264 @ 0x55e1bc2bd240] coded y,uvDC,uvAC intra: 32.9% 0.0% 0.0% inter: 0.3% 0.0% 0.0%
+[libx264 @ 0x55e1bc2bd240] i16 v,h,dc,p: 91%  7%  2%  0%
+[libx264 @ 0x55e1bc2bd240] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 44% 13% 18%  2%  3% 14%  2%  2%  2%
+[libx264 @ 0x55e1bc2bd240] i8c dc,h,v,p: 100%  0%  0%  0%
+[libx264 @ 0x55e1bc2bd240] ref P L0: 81.1% 13.0%  6.0%
+[libx264 @ 0x55e1bc2bd240] kb/s:470.09

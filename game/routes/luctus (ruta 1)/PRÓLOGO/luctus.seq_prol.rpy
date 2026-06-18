@@ -29,7 +29,28 @@ label seq_prolcensura:
 
 label seq_prolpav1:
     
+    scene black
+    scene pavelojo
     nvl clear
+    $ color_mode= "default"
+    call mode_nadie
+    play audio bell volume 0.5
+    "..."
+    "Mis ojos recorren las calles como mis pies lo han hecho tantas veces antes.{w=0.3} Mis pupilas se detienen en las fachadas de los edificios,{w=0.2} en las caras de las personas{w=0.2}, y no reconozco a nadie,{w=0.3} no reconozco nada."
+
+    show pav2-1
+    play audio bell volume 0.5
+    "Me siento desorientado entre una multitud ruidosa, que parece gritar entre murmullos burlas que se sobreponen hasta convertirse en chillidos grotescos." 
+    "Gente se mueve a mi lado, empujandose unos a otros tratando ojear el centro.{w=0.3} En un intento de caminar y pasar entre ellos levanto el pie levemente,{w=0.2} pero inmediatamente vuelve a tocar el piso." 
+    "Siento mi cuerpo temblar, y no puedo hacer más que levantar mi mano,{w=0.2} en un movimiento más parecido a un arrastre sobre mi rostro,{w=0.2} que actua como un camino a recorrer para tapar mis orejas y silenciar el mundo."
+    nvl clear
+    
+    show pav2-2
+    play audio bell volume 0.6
+    "..."
+    "El viento mañanero golpea mi espalda y revuelve mi cabello ocultando mi rostro,{w=0.2} volviendose uno desconocido para los demás como lo son los suyos para mí." 
+    "En este incognito me atrevo a levantar la mirada.{w=0.3} Con mis manos aprieto mi craneo y lo obligo a levantarse,"
+
     window hide
     scene bg ciudad1:
         ypos -0.05
@@ -80,29 +101,19 @@ label seq_prolpav1:
             linear 2.2 ypos 1.38
             linear 2.2 ypos 1.4
             repeat
-        
-    window show
-        
-    play audio bell volume 0.5
+    
+    call mode_izquierda
     play music armydreamers volume 0.8
-    "..."
-    "Mis ojos recorren las calles como mis pies lo han hecho tantas veces antes.{w=0.3} Mis pupilas se detienen en las fachadas de los edificios,{w=0.2} en las caras de las personas{w=0.2}, y no reconozco a nadie,{w=0.3} no reconozco nada."
-    "Me siento desorientado entre una multitud ruidosa, que parece gritar entre murmullos burlas que se sobreponen hasta convertirse en chillidos grotescos." 
-    "Gente se mueve a mi lado, empujandose unos a otros tratando ojear el centro.{w=0.3} En un intento de caminar y pasar entre ellos levanto el pie levemente,{w=0.2} pero inmediatamente vuelve a tocar el piso." 
-    "Siento mi cuerpo temblar, y no puedo hacer más que levantar mi mano,{w=0.2} en un movimiento más parecido a un arrastre sobre mi rostro,{w=0.2} que actua como un camino a recorrer para tapar mis orejas y silenciar el mundo."
-    nvl clear
-
-    play audio bell volume 0.6
-    "..."
-    "El viento mañanero golpea mi espalda y revuelve mi cabello ocultando mi rostro,{w=0.2} volviendose uno desconocido para los demás como lo son los suyos para mí." 
-    "En este incognito me atrevo a levantar la mirada.{w=0.3} Con mis manos aprieto mi craneo y lo obligo a levantarse,{w=0.2} mi vista está difusa pero su silueta es clara,{w=0.2} mientras la veo a la cara puedo sentir como ella {color=#f00}me mira devuelta.{/color}"
+    extend "{w=0.2} mi vista está difusa pero su silueta es clara,{w=0.2} mientras la veo a la cara puedo sentir como ella {color=#f00}me mira devuelta.{/color}"
     nvl clear
 
     play audio bell volume 0.7
     "..."
     "Imitando un casamiento,{w=0.2} las campanas resuenan haciendo eco en las veredas,{w=0.2} me van a volver loco,{w=0.3} suenan,{cps=24} y suenan,{w=0.25}{cps=36} y suenan,{w=0.2}{cps=48} y suenan,{w=0.15}{cps=60} y suenan,{w=0.1}{cps=72} y suenan,{w=0.1} y suenan,{w=0.1} y suenan,{w=0.1} y suenan,{w=0.1} y suenan."
-    "Me pregunto si habrá amado." 
+    "Me pregunto si habrá amado como aquellos en las bodas." 
     "Hace años dejé de creer en el dios cretino del que tanto me hablaron,{w=0.2} me pregunto{w=0.2} ¿Le habrá rezado?{w=0.2} ¿Se habrá puesto de rodillas ante una ventana y deseado con todas sus fuerzas no morir?"
+
+    #de aqui pa abajo kkkkkkkkkk
     "Vivió una vida tan miserable como la mía,{w=0.2} significa entonces{w=0.2} ¿Que moriré también?"
     "No,{w=0.3} no, no, no."
     nvl clear

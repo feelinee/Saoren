@@ -1,11 +1,10 @@
 ﻿label luctus_prologue:
 
     stop music
+    scene black
     $ color_mode = "orange"
-    call mode_izquierda
     call seq_prolpav1
 
-    scene bg bosque
     play music bgbosque fadein 1 volume 1
     window show
     "Cuando llega la noche y las almas se duermen, los árboles hablan en el silencio que invade el bosque. {w}\nEl viento se convierte en su voz y el psiturismo en sus palabras."
