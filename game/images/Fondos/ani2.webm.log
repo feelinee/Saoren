@@ -1,0 +1,19 @@
+/usr/bin/ffmpeg -hide_banner -y -y -r 12 -start_number 0 -start_number_range 1 -i /home/feelinee/Juegos/fotograma%04d.png -c:v libvpx-vp9 -b:v 2M /home/feelinee/Juegos/Saoren Sombras de la Libertad/game/images/Fondos/ani2.webm
+=====================================================
+Input #0, image2, from '/home/feelinee/Juegos/fotograma%04d.png':
+  Duration: 00:00:02.12, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc, gbr/unknown/unknown), 1920x1080 [SAR 11811:11811 DAR 16:9], 25 fps, 25 tbr, 25 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (png (native) -> vp9 (libvpx-vp9))
+Press [q] to stop, [?] for help
+[libvpx-vp9 @ 0x5620ed8b61c0] v1.15.2
+Output #0, webm, to '/home/feelinee/Juegos/Saoren Sombras de la Libertad/game/images/Fondos/ani2.webm':
+  Metadata:
+    encoder         : Lavf61.7.100
+  Stream #0:0: Video: vp9, yuva420p(tv, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 2000 kb/s, 12 fps, 1k tbn
+      Metadata:
+        encoder         : Lavc61.19.101 libvpx-vp9
+      Side data:
+        cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A    frame=    6 fps=6.0 q=23.0 size=       0KiB time=00:00:00.50 bitrate=   7.6kbits/s speed=0.499x    frame=   11 fps=7.3 q=8.0 size=       0KiB time=00:00:00.91 bitrate=   4.2kbits/s speed=0.611x    frame=   16 fps=8.0 q=10.0 size=       0KiB time=00:00:01.33 bitrate=   2.9kbits/s speed=0.666x    frame=   22 fps=8.8 q=8.0 size=       0KiB time=00:00:01.83 bitrate=   2.1kbits/s speed=0.733x    frame=   27 fps=9.0 q=16.0 size=       0KiB time=00:00:02.25 bitrate=   1.7kbits/s speed=0.75x    frame=   29 fps=8.3 q=16.0 size=       0KiB time=00:00:02.41 bitrate=   1.6kbits/s speed=0.69x    frame=   29 fps=7.2 q=16.0 size=       0KiB time=00:00:02.41 bitrate=   1.6kbits/s speed=0.604x    frame=   29 fps=6.4 q=16.0 size=       0KiB time=00:00:02.41 bitrate=   1.6kbits/s speed=0.537x    frame=   29 fps=5.8 q=16.0 size=       0KiB time=00:00:02.41 bitrate=   1.6kbits/s speed=0.483x    [out#0/webm @ 0x5620ed8b6d40] video:580KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.678766%
+frame=   53 fps= 11 q=10.0 Lsize=     584KiB time=00:00:04.41 bitrate=1083.8kbits/s speed=0.881x    

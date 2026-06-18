@@ -88,4 +88,6 @@ image side arboles = "images/Side/arboles.png"
 image side pisadas = "images/Side/pisadas.png"   
 image side flores = "images/Side/asfodelos.png"    
 
-##
+## cgs(?
+
+image pavelojo = Movie(play="images/Fondos/ani2.webm", loop=True)
