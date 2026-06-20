@@ -13,6 +13,7 @@ label casa_d3:
     "dia3pt3.1 casa"
     #Pavel dice que va a aprovechar de limpiar
     #Encuentra un libro relacionado con Magnus
+    #el libro que encuentra Pavel mientras limpia es el que compró Anaraith antes de morir; lo abre para ver de qué se trata y se ríe con asco. Es el libro del prólogo.
     $ mag_libro = True
     $ dia_mapa += 1
     jump mapa

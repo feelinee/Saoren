@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Desarrollo/Estado.md",
+                "file": "03 Narrativa/01 Acto I - Negatio/Escena 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Estado"
+              "title": "Escena 1"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byCreatedTimeReverse",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -186,9 +186,18 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "03 Narrativa/Estructura General.md",
+    "03 Narrativa/01 Acto I - Negatio/Escena 1.md",
+    "03 Narrativa/01 Acto I - Negatio/Escena 2/El puesto de flores.md",
+    "03 Narrativa/01 Acto I - Negatio/Escena 2/El puesto de carne.md",
+    "03 Narrativa/01 Acto I - Negatio/_Resumen.md",
+    "03 Narrativa/01 Acto I - Negatio/Negatio Escena 2/Sin título.md",
+    "03 Narrativa/01 Acto I - Negatio/Escena 2",
+    "02 Personajes/Pavel.md",
+    "02 Personajes/Marcille.md",
+    "00 Desarrollo/Estado.md",
     "03 Narrativa/00 Prologo/Escena 1.md",
     "00 Desarrollo/1. Indice.md",
-    "00 Desarrollo/Estado.md",
     "05 Animaciones/Escena 1 - Animación/Escena 1.canvas",
     "Pasted image 20260616002654 1.png",
     "Pasted image 20260616002654.png",
@@ -201,8 +210,6 @@
     "00 Desarrollo/Notas.md",
     "04_Sistemas.md",
     "00 Desarrollo/Beta testers.md",
-    "03 Narrativa/01 Acto I - Negatio/_Resumen.md",
-    "03 Narrativa/01 Acto I - Negatio/Escena 1.md",
     "03_Narrativa/Estructura.md",
     "03_Narrativa",
     "01 Mundo/Sociedad/Estructura social.canvas",
@@ -215,17 +222,11 @@
     "01 Mundo/Cosmología/Almas.md",
     "01 Mundo/Cosmología/Cosmología.md",
     "01 Mundo.md",
-    "01_Mundo.md",
-    "04 Sistemas/NVL.md",
-    "01 Mundo/Sociedad/Moneda.md",
-    "03 Narrativa/00 Prologo/Escena 2.md",
-    "03 Narrativa/Estructura General.md",
     "04 Sistemas/NVL",
     "03 Narrativa/01 Acto I - Negatio",
     "03 Narrativa/00 Prologo",
     "03 Narrativa/Estructura",
     "01 Mundo/Lengüaje",
-    "01 Mundo/Geografia",
     "Sin título.canvas"
   ]
 }
