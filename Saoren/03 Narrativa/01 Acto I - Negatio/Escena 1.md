@@ -1,12 +1,28 @@
 _Fondo negro_
 
-Despierto con el canto de los pájaros acompañando mi mañana, la luz de la ventana me obliga a taparme la cara con mi brazo una paloma se apoya en la ventana, con los ojos entrecerrados observo como inclina su cabeza mientras toma migas de pan añejo del plato del que se apoya con sus patas. 
-
 «Tú y yo no somos tan distintos...»
 
 «¿No?»
 
 «...»
+
+Despierto con los ojos entrecerrados y el sol golpeando de manera amable mis ojos. Tapo mi cara con mi antebrazo, recostandome en ellos mientras inclino ligeramente la espalda para estirar el cuerpo, la amabilidad del sol no es suficiente, pues mi ojos arden ante los rayos mañaneros que caen desde mi ventana.
+
+Los pajaros me acompañan con una suave canción, puedo sentir el aleteo de las palomas junto a sus siluetas apoyarse en el alféizar, donde tengo un plato con migajas de pan añejo. Con los ojos aún entrecerrados levanto la mirada y las observo comer, su sombra trae confort a mi vista. 
+
+(/reescribir esto)
+Mi estomago pronto envidia el desayuno de las aves, haciendo un ruido tan fuerte que me hace avergonzar. Me levanto de golpe, tirando la silla en la que estaba sentado. Las palomas exaltadas por el movimiento repentino alzan en vuelo. Las miro irse, arrepentido. 
+(/)
+
+No hay nadie más que yo aquí.
+
+¿De qué estoy escapando?
+
+ Frustrado me revuelvo pelo mientras camino hacia la cocina, el piso rechina ligeramente, y hace un mal sustito del cantico ya desvanizo de los pajaritos madrugadores. 
+ 
+ Estiro mis patas lo más que puedo, pero mis dedos apenan rozan con el objetivo. Suspiro y muevo el taburete escondido entre los muebles para subirme. Con mi nueva altura busco en la alacena el frasco más escondido —enemigo declarado de la luz y el aire limpio—, y lo saco teniendo cuidado de que no se me deslice de las manos y caiga, arruinando las raciones de emergencia.
+
+
 
 ---
 
