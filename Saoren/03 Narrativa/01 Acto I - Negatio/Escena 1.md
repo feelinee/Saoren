@@ -18,9 +18,9 @@ No hay nadie más que yo aquí.
 
 ¿De qué estoy escapando?
 
- Frustrado me revuelvo pelo mientras camino hacia la cocina, el piso rechina ligeramente, y hace un mal sustito del cantico ya desvanizo de los pajaritos madrugadores. 
+Frustrado me revuelvo pelo mientras camino hacia la cocina, el piso rechina ligeramente, y hace un mal sustito del cantico ya desvanizo de los pajaritos madrugadores. 
  
- Estiro mis patas lo más que puedo, pero mis dedos apenan rozan con el objetivo. Suspiro y muevo el taburete escondido entre los muebles para subirme. Con mi nueva altura busco en la alacena el frasco más escondido —enemigo declarado de la luz y el aire limpio—, y lo saco teniendo cuidado de que no se me deslice de las manos y caiga, arruinando las raciones de emergencia.
+Estiro mis patas lo más que puedo, pero mis dedos apenan rozan con el objetivo. Suspiro y muevo el taburete escondido entre los muebles para subirme. Con mi nueva altura busco en la alacena el frasco más escondido —enemigo declarado de la luz y el aire limpio—, y lo saco teniendo cuidado de que no se me deslice de las manos y caiga, arruinando las raciones de emergencia.
 
 
 
