@@ -1,22 +1,22 @@
-# Defaults
+## Defaults
 
 default persistent.luctus_compl = False
 default color_mode = "default"
 
-# Defines
+## Defines
 
-define pav = Character("PAVEL", kind=nvl, color="#e4dbb2")
-define ana = Character("ANARAITH", kind=nvl, color="#e4dbb2")
-define mar = Character("MARCILLE", kind=nvl, color="#e4dbb2")
-define asf = Character("ASFÓDEL", kind=nvl, color="#e4dbb2")
-define qn = Character("???",  kind=nvl, color="#e4dbb2", )
+define pav = Character("PAVEL", kind=nvl)
+define ana = Character("ANARAITH", kind=nvl)
+define mar = Character("MARCILLE", kind=nvl)
+define asf = Character("ASFÓDEL", kind=nvl)
+define qn = Character("???",  kind=nvl)
 define narrator = Character(None, kind=nvl)
 define menu = nvl_menu
 
 #callback=make_type_sound(sounds_default)
 
 define color_texto = {
-    "default" : "#e4dbb2",
+    "default" : "#bebebe",
     "blue"    : "#b2c6e4",
     "red"     : "#e4b2b2",
     "orange" : "#e4dbb2",
@@ -24,7 +24,7 @@ define color_texto = {
 }
 
 define color_enfocado = {
-    "default" : '#cc6600',
+    "default" : '#6c6c6c',
     "blue"    : '#0007cc',
     "red"     :  '#cc0000',
     "orange" : '#cc6600',
@@ -56,38 +56,54 @@ init -1 python:
             elif event == "slow_done" or event == "end":
                 renpy.music.stop(channel="typing")
         return type_sound
-# Images
-
-image fondo negro:
-    "gui/nvl/nvl4.png"
 
 ## Pavel Sprites
 
 image pavel neutral: 
-    "images/Pjs/Pavel Prologo Sprites/pavel normal.png"
+    "images/pjs/Pavel Prologo Sprites/pavel normal.png"
     zoom 0.30
 image pavel triste: 
-    "images/Pjs/Pavel Prologo Sprites/pavel triste.png"
+    "images/pjs/Pavel Prologo Sprites/pavel triste.png"
     zoom 0.30
 image pavel enojado: 
-    "images/Pjs/Pavel Prologo Sprites/pavel enojado.png"
+    "images/pjs/Pavel Prologo Sprites/pavel enojado.png"
     zoom 0.30
 image pavel dudoso: 
-    "images/Pjs/Pavel Prologo Sprites/pavel dudoso.png"
+    "images/pjs/Pavel Prologo Sprites/pavel dudoso.png"
     zoom 0.30
 image pavel anaraith: 
-    "images/Pjs/Pavel Prologo Sprites/pavel anaraith.png"
+    "images/pjs/Pavel Prologo Sprites/pavel anaraith.png"
     zoom 0.30
 image pavel anaraith2: 
-    "images/Pjs/Pavel Prologo Sprites/pavel anaraith2.png"
+    "images/pjs/Pavel Prologo Sprites/pavel anaraith2.png"
     zoom 0.30
 
 ## Side images
 
-image side arboles = "images/Side/arboles.png"
-image side pisadas = "images/Side/pisadas.png"   
-image side flores = "images/Side/asfodelos.png"    
+# Mors
 
-## cgs(? 
+image side mors1 = "images/side/mors/side_mors_1.png"
+image side mors2 = "images/side/mors/side_mors_2.png"
+image side mors3 = "images/side/mors/side_mors_3.png"
+image side mors4 = "images/side/mors/side_mors_4.png"    
+image side mors5 = "images/side/mors/side_mors_5.png"   
 
-image pavelojo = Movie(play="images/Fondos/ani2.webm", loop=False)
+## Scenes
+
+# Mors
+
+image scen mors1 = "images/scenes/mors/scene_mors_1.png"
+image scen mors3 = Movie(play="images/scenes/mors/scene_mors_3.webm", loop=False)
+image scen mors5 = "images/scenes/mors/scene_mors_5.png"
+image scen mors6 = "images/scenes/mors/scene_mors_6.png"
+image scen mors7 = "images/scenes/mors/scene_mors_7.png"
+image scen mors8 = "images/scenes/mors/scene_mors_8.png"
+
+# Negatio
+
+image scen nega1 = "images/scenes/negatio/scene_negatio_1.png"
+image scen nega2 = "images/scenes/negatio/scene_negatio_2.png"
+image scen nega3 = "images/scenes/negatio/scene_negatio_3.jpg"
+image scen nega4 = "images/scenes/negatio/scene_negatio_4.png"
+
+## Cgs

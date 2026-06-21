@@ -1681,9 +1681,9 @@ default text_xsize = 1680
 label mode_nadie:
     $ text_mode  = "nadie"
     $ nvl_bg     = "gui/nvl/nvl1.png"
-    $ text_xpos  = 120
+    $ text_xpos  = 220
     $ text_ypos  = 140
-    $ text_xsize = 1680
+    $ text_xsize = 1480
     return
 
 
@@ -1800,17 +1800,17 @@ init python:
     g.navigation = True
 
     g.button("gato")
-    g.image("bg gato")
-    g.unlock("bg gato")
+    g.image("scen negatio3")
+    g.unlock("scen negatio3")
 
     g.button("pavcille")
-    g.image("bg pavcille")
-    g.unlock("bg pavcille")
+    g.image("scen negatio4")
+    g.unlock("scen negatio4")
     
 
 screen gallery:
     tag menu
-    add "bg bosque"
+    add "scen mors1"
     grid 2 2:
         xfill True
         yfill True
@@ -1845,7 +1845,7 @@ screen gallery:
 screen gallery_bgs:
     
     tag menu
-    add "bg pavcille"
+    add "scen negatio4"
     grid 3 2:
         xfill True
         yfill True
@@ -1857,7 +1857,7 @@ screen gallery_bgs:
 
 screen gallery_cgs:
     tag menu
-    add "bg cuento"
+    add "scen mors8"
     grid 3 2:
         xfill True
         yfill True
