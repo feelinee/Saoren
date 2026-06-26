@@ -1,0 +1,72 @@
+    scene bg ciudad1:
+        ypos -0.05
+        linear 6.0 ypos 0.0
+        block:
+            linear 2.2 ypos -0.01         
+            linear 2.2 ypos 0.0
+            repeat
+    
+    show pavel1ana:
+        zoom 0.8
+        ypos 0.20 xpos 0.12
+        linear 6.0 ypos 0.16
+        block:           
+            linear 2.2 ypos 0.17
+            lineakr 2.2 ypos 0.16
+            repeat
+
+    show anaraith2 at left:
+        ypos 1.2
+        linear 6.0 ypos 1.4
+        block:
+            linear 2.2 ypos 1.38
+            linear 2.2 ypos 1.4
+            repeat
+
+    $ renpy.pause(6.0, hard=False)
+    
+    scene bg ciudad1:
+        ypos 0.0
+        block:
+            linear 2.2 ypos -0.01         
+            linear 2.2 ypos 0.0
+            repeat
+
+    show pavel1ana:
+        zoom 0.8k
+        xpos 0.12
+        ypos 0.16
+        block:           
+            linear 2.2 ypos 0.17
+            linear 2.2 ypos 0.16
+            repeat
+
+    show anaraith2 at left:
+        ypos 1.4
+        block:
+            linear 2.2 ypos 1.38
+            linear 2.2 ypos 1.4
+            repeat
+    
+        scene bg ciudad1:
+        ypos 0.0
+        block:
+            linear 2.2 ypos -0.01         
+            linear 2.2 ypos 0.0
+            repeat
+
+    show pavel1ana:
+        zoom 0.8
+        xpos 0.12
+        ypos 0.16
+        block:           
+            linear 2.2 ypos 0.17
+            linear 2.2 ypos 0.16
+            repeat
+
+    show anaraith2 at left:
+        ypos 1.4
+        block:
+            linear 2.2 ypos 1.38
+            linear 2.2 ypos 1.4
+            repeat
