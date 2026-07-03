@@ -11,6 +11,56 @@ label luctus_negatio:
     pause
     hide text
 
+    call mode_derecha
+    $ color_mode= "default"
+    
+
+    "Despierto con los ojos entrecerrados y el sol golpeando con una amabilidad limitada,{w=0.1} mis retinas duelen levemente ante los rayos mañaneros que parecen caer de manera intencional directo desde la ventana hasta mi vista." 
+    
+    "Tapo mi cara con mi antebrazo,{w=0.2} recostandome en él mientras inclino ligeramente la espalda para estirar el cuerpo."
+    
+    pav "Ay ay ay"
+
+    "Siento un dolor agudo en el cuello y me incorporo de inmediato, paso la mano por la zona sobandola mientras me sigo quejando en voz baja. No es la primera vez que me pasa pero parezco no aprender la lección."
+
+    nvl clear
+
+    "Los pajaros me consuelan con una suave canción,{w=0.1} puedo sentir el aleteo de las palomas junto a sus siluetas apoyarse en el alféizar,{w=0.1} donde tengo un plato con migajas de pan añejo."
+    
+    "Levanto la mirada y las observo comer,{w=0.2} su sombra trae confort a mi vista." 
+
+    "Mi estomago pronto empezó a envidiar el desayuno de las aves,{w=0.1} una procesión de burbujas ecomienza una danzar en mis entrañas haciendo sonar sus pasos con un eco que rebotó por toda la habitación." 
+    
+    "Mis mejillas enrojecen y me levanto de golpe, tirando la silla en la que estaba sentado."
+
+    #*sonido de palomas volando*
+
+    "Las palomas exaltadas por el movimiento repentino alzan en vuelo. Las miro irse, arrepentido." 
+
+    "No hay nadie más que yo aquí."
+
+    pav "¿De qué estoy escapando?"
+
+    "Frustrado me revuelvo pelo mientras camino hacia la cocina, el piso rechina ligeramente, y hace un mal sustito del cantico ya desvanecido de los pajaritos madrugadores. Cuando llego, me paro de puntillas para abrir la alacena. Estiro mis patas lo más que puedo, pero mis dedos apenan rozan con el objetivo." 
+    
+    "Suspiro y muevo el taburete escondido entre los muebles para subirme." 
+    
+    "Con mi nueva altura busco en la alacena el frasco más escondido —enemigo declarado de la luz y el aire limpio—, y lo saco teniendo cuidado de que no se me resbale de las manos y caiga, arruinando las raciones de emergencia."
+
+    "Intento abrir el recipiente, aprieto con fuerza la tapa y la intento girar en todas las direcciones posibles, pero no cede." 
+
+    pav "¿Dónde está Mar cuando uno lo necesita?"
+
+    "..."
+
+    pav "¿Dónde estará...?"
+
+    "Agito la la cabeza para despejar mi mente, y en un ultimo intento, tiro la tapa hacia arriba con toda mi fuerza." 
+
+    "Parece ser la respuesta correcta, pues inmediatamente la tapa se separa del recipiente, pero el tirón de mi mano se lleva a mi cuerpo consigo, y caigo de espaldas contra el piso."
+
+    "* Thud * "
+
     scene scen nega3
     $ color_mode = "green"
     call mode_medio

@@ -6,25 +6,25 @@ _Fondo negro_
 
 «...»
 
-"Despierto con los ojos entrecerrados y el sol golpeando de manera amable mis ojos. Tapo mi cara con mi antebrazo, recostandome en el mientras inclino ligeramente la espalda para estirar el cuerpo, la amabilidad del sol no es suficiente, pues mi ojos arden ante los rayos mañaneros que caen desde mi ventana."
+"Despierto con los ojos entrecerrados y el sol golpeando con una amabilidad limitada, pues, mis retiras duelen levemente ante los rayos mañaneros que parecen caer de manera intencional directo desde la ventana hasta mi vista."
 
 "Los pajaros me acompañan con una suave canción, puedo sentir el aleteo de las palomas junto a sus siluetas apoyarse en el alféizar, donde tengo un plato con migajas de pan añejo. Con los ojos aún entrecerrados levanto la mirada y las observo comer, su sombra trae confort a mi vista." 
 
-(/reescribir esto)
-"Mi estomago pronto envidia el desayuno de las aves, haciendo un ruido tan fuerte que me hace avergonzar. Me levanto de golpe, tirando la silla en la que estaba sentado. Las palomas exaltadas por el movimiento repentino alzan en vuelo."
+"Mi estomago pronto empezó a envidiar el desayuno de las aves, una procesión de burbujas empezó a danzar en mis entrañas haciendo sonar sus pasos con un eco que rebotó por toda la habitación, mis mejillas enrojecieron y me levanté de golpe, tirando la silla en la que estaba sentado."
 
-"Las miro irse, arrepentido." 
-(/)
+#*sonido de palomas volando*
+
+"Las palomas exaltadas por el movimiento repentino alzan en vuelo. Las miro irse, arrepentido." 
 
 "No hay nadie más que yo aquí."
 
 pav "¿De qué estoy escapando?"
 
- "Frustrado me revuelvo pelo mientras camino hacia la cocina, el piso rechina ligeramente, y hace un mal sustito del cantico ya desvanecido de los pajaritos madrugadores. Cuando llego, me paro de puntillas para abrir la alacena. Estiro mis patas lo más que puedo, pero mis dedos apenan rozan con el objetivo." 
+"Frustrado me revuelvo pelo mientras camino hacia la cocina, el piso rechina ligeramente, y hace un mal sustito del cantico ya desvanecido de los pajaritos madrugadores. Cuando llego, me paro de puntillas para abrir la alacena. Estiro mis patas lo más que puedo, pero mis dedos apenan rozan con el objetivo." 
  
- "Suspiro y muevo el taburete escondido entre los muebles para subirme." 
+"Suspiro y muevo el taburete escondido entre los muebles para subirme." 
  
- "Con mi nueva altura busco en la alacena el frasco más escondido —enemigo declarado de la luz y el aire limpio—, y lo saco teniendo cuidado de que no se me resbale de las manos y caiga, arruinando las raciones de emergencia."
+"Con mi nueva altura busco en la alacena el frasco más escondido —enemigo declarado de la luz y el aire limpio—, y lo saco teniendo cuidado de que no se me resbale de las manos y caiga, arruinando las raciones de emergencia."
 
 "Intento abrir el recipiente, aprieto con fuerza la tapa y la intento girar en todas las direcciones posibles, pero no cede." 
 
@@ -36,11 +36,9 @@ pav "¿Dónde estará...?"
 
 "Agito la la cabeza para despejar mi mente, y en un ultimo intento, tiro la tapa hacia arriba con toda mi fuerza." 
 
-"Lo bueno, es que parece ser la respuesta correcta, pues se suelta de manera casi inmediata." 
+"Parece ser la respuesta correcta, pues inmediatamente la tapa se separa del recipiente, pero el tirón de mi mano se lleva a mi cuerpo consigo, y caigo de espaldas contra el piso."
 
-"Lo malo, es que el tirón de mi mano se lleva mi cuerpo consigo, y caigo de espaldas contra el piso."
-
-.* Thud * (sonido de pavel caido) 
+"* Thud * "
 
 
 ---
