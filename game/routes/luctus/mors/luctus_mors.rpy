@@ -7,7 +7,7 @@
     scene scen mors1
     nvl clear
     $ color_mode= "default"
-    call mode_nadie
+    call mode_nadie from _call_mode_nadie
     play audio bell volume 0.5
     "..."
     "Mis ojos recorren las calles como mis pies lo han hecho tantas veces antes.{w=0.3} Mis pupilas se detienen en las fachadas de los edificios,{w=0.2} en las caras de las personas{w=0.2}, y no reconozco a nadie,{w=0.3} no reconozco nada."
@@ -23,7 +23,7 @@
     "En este incognito me atrevo a levantar la mirada.{w=0.3} Con mis manos aprieto mi craneo y lo obligo a levantarse,"
 
     window hide
-    call mode_izquierda
+    call mode_izquierda from _call_mode_izquierda
     show scen mors3
     pause 4.3
     scene scen mors1
@@ -119,7 +119,7 @@
 
     scene scen mors8
     $ color_mode = "blue"
-    call mode_derecha
+    call mode_derecha from _call_mode_derecha
     "En los dias en que Dios caminaba por esta tierra,{w=0.3} cuando el polvo del camino manchaba sus sandalias como las de cualquier mortal,{w=0.3} se habla una tragedia que pocos se atreven a contar." 
     "La fauna aquella,{w=0.2} criatura fiel entre las criaturas,{w=0.2} lo contempló desde la maleza.{w=0.3} En su pecho,{w=0.2} escondia algo que ninguna bestia había sentido antes."
     "Amor{w}, por una hija de hombre,{w=0.2} una mujer de voz suave y manos callosas que olían a tierra mojada."
@@ -197,7 +197,7 @@
     pause 0.5
     window show None
 
-    call mode_izquierda
+    call mode_izquierda from _call_mode_izquierda_1
     $ color_mode = "orange"
     scene scen mors7     
     show side mors4:

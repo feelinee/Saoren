@@ -63,7 +63,7 @@ label luctus_negatio:
 
     scene scen nega3
     $ color_mode = "green"
-    call mode_medio
+    call mode_medio from _call_mode_medio
     "El gato,{w=0.3} que no parece haber entendido mi duda,{w=0.3} se restriega por mi pierna maullando para que lo acaricie."
     "Le susurro un maullido devuelta{cps=2.0}... {cps=12}pero no me responde,{w=0.2} en vez de eso muestra su abdomen,{w=0.2} y yo me agacho para acariciarlo."
     "—Hey chico,{w=0.3} ya está tu pedido."
@@ -146,10 +146,10 @@ label luctus_negatio:
     "Al final creo que..."
     menu:
         "El puesto de flores":
-            call negatio_flores
+            call negatio_flores from _call_negatio_flores
 
         "El puesto de carne":
-            call negatio_carne
+            call negatio_carne from _call_negatio_carne
     
     jump mapa
 
@@ -185,7 +185,14 @@ label negatio_flores:
     #Pavel va al puesto de flores y pregunta por el precio, viendo que ya se hizo tarde se resigna y compra las flores, prometiendo para si mismo comprarlas otro dia.
 
 label luctus_negatio2:
-    "escena 2 yay"
+    nvl clear
+    $ color_mode= "orange"
+    scene scen nega5
+    show mar nega1 at right
+    show pav nega1 at left
+    mar "i have feelings for you"
+    pav "i have feelings for you too"
+    "the feeling was friendship"
     return
 
 ##Escena 2 (mover a cap 1):
