@@ -24,7 +24,7 @@ define gui.show_name = True
 
 ## Versión del juego.
 
-define config.version = "v1"
+define config.version = "v1.0.0-alpha"
 
 
 ## Texto situado en la pantalla 'Acerca de' del juego. Sitúa el texto entre
@@ -185,11 +185,18 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('game/**.rpy', None)
+    build.classify('game/archivos krita/**', None)
+    build.classify('Saoren/**', None)
+
 
     ## Para archivar, se clasifican como 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.mp3', 'archive')
+    build.classify('game/**.mp4', 'archive')
+
 
     ## Los archivos que corresponden a patrones de documentation se duplican en
     ## la distribución de mac; aparecerán en los archivos app y zip.
