@@ -7,9 +7,9 @@ label mercado_d1:
         "Traje la comida para el gatito o podria comprarle las flores a Ana...."
         menu:
             "Voy a buscar al gatito":
-                call gatod1
+                call gatod1 from _call_gatod1
             "Anaraith...":
-                call floresd1
+                call floresd1 from _call_floresd1
                 
     $ dia_mapa += 1
     jump mapa

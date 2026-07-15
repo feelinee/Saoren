@@ -245,7 +245,6 @@ screen quick_menu():
             style_prefix "quick"
             style "quick_menu"
 
-            textbutton _("Atrás") action Rollback()
             textbutton _("Historial") action ShowMenu('history')
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
@@ -1577,7 +1576,6 @@ screen quick_menu():
             style "quick_menu"
             style_prefix "quick"
 
-            textbutton _("Atrás") action Rollback()
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Menú") action ShowMenu()
@@ -1750,20 +1748,77 @@ screen nvl(dialogue, items=None):
                             background None
                             xfill True
 
-                            vbox:
-                                spacing 5
-                                xfill True
+                            if text_mode == "medio":
+                                $ cfg_b  = burbuja_de(d.who)
+                                $ _lado  = cfg_b["lado"]  if cfg_b else None
+                                $ _color = (color_burbuja_izq if _lado == "izquierda" else color_burbuja_der).get(color_mode, "#4e7ea0") if cfg_b else None
+                                $ _fondo = (_color + "cc") if _color else "#00000000"
 
-                                if d.who is not None:
-                                    text d.who:
-                                        id d.who_id
+                                if cfg_b:
+                                    $ _ancho_frame = int(text_xsize * 0.97)
+                                    $ _ancho_texto = _ancho_frame - 24
+                                    $ _bg_burbuja  = Transform(Solid(_color), alpha=0.8)
+
+                                    if _lado == "izquierda":
+                                        hbox:
+                                            xfill True
+                                            spacing 0
+                                            add Transform(ColaDeBurbuja("izquierda", _color), alpha=0.8) xsize 13 ysize 40 yalign 0.5
+                                            frame:
+                                                xsize _ancho_frame
+                                                background _bg_burbuja
+                                                padding (12, 10, 12, 10)
+                                                text d.what:
+                                                    id d.what_id
+                                                    style "nvl_burbuja_texto"
+                                                    xmaximum _ancho_texto
+                                                    color color_texto.get(color_mode, "#e4dbb2")
+                                            null xfill True
+
+                                    else:
+                                        hbox:
+                                            xfill True
+                                            spacing 0
+                                            null xfill True
+                                            frame:
+                                                xsize _ancho_frame
+                                                background _bg_burbuja
+                                                padding (12, 10, 12, 10)
+                                                text d.what:
+                                                    id d.what_id
+                                                    style "nvl_burbuja_texto"
+                                                    xmaximum _ancho_texto
+                                                    color color_texto.get(color_mode, "#e4dbb2")
+                                            add Transform(ColaDeBurbuja("derecha", _color), alpha=0.8) xsize 13 ysize 40 yalign 0.5
+                                else:
+                                    ## narrador u otros sin burbuja registrada
+                                    vbox:
+                                        spacing 5
+                                        xfill True
+                                        if d.who is not None:
+                                            text d.who:
+                                                id d.who_id
+                                                xmaximum text_xsize
+                                        text d.what:
+                                            id d.what_id
+                                            xmaximum text_xsize
+                                            color color_texto.get(color_mode, "#e4dbb2")
+
+                            else:
+                                ## todos los demás modos: nadie / derecha / izquierda
+                                vbox:
+                                    spacing 5
+                                    xfill True
+
+                                    if d.who is not None:
+                                        text d.who:
+                                            id d.who_id
+                                            xmaximum text_xsize
+
+                                    text d.what:
+                                        id d.what_id
                                         xmaximum text_xsize
-
-                                text d.what:
-                                    id d.what_id
-                                    xmaximum text_xsize
-                                    color color_texto.get(color_mode, "#e4dbb2")
-
+                                        color color_texto.get(color_mode, "#e4dbb2")
             if items is not None:
                 vbox:
                     xalign 0.5

@@ -9,10 +9,10 @@ label bosque_d4:
 
     if mag_libro:
         "dia4pt1.1 tienes el libro de magnus"
-        call bosque_d4p
+        call bosque_d4p from _call_bosque_d4p
     elif ana_tumba: 
         "dia4pt1.2 fuiste a la tumba"
-        call bosque_d4t
+        call bosque_d4t from _call_bosque_d4t
     
     $ dia_mapa += 1
     jump mapa
