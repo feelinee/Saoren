@@ -186,7 +186,7 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
     build.classify('game/**.rpy', None)
-    build.classify('game/archivos krita/**', None)
+    build.classify('archivos krita/**', None)
     build.classify('Saoren/**', None)
 
 
@@ -196,6 +196,7 @@ init python:
     build.classify('game/**.jpg', 'archive')
     build.classify('game/**.mp3', 'archive')
     build.classify('game/**.mp4', 'archive')
+    build.classify('game/**.webm', 'archive')
 
 
     ## Los archivos que corresponden a patrones de documentation se duplican en
