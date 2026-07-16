@@ -1,16 +1,18 @@
 ﻿label luctus_prologue:
 
+    scene scen mors7
     $color_mode= "orange"
+    call mode_izquierda
     play music bgbosque fadein 1
     window show
     "Cuando llega la noche y las almas se duermen, los árboles hablan en el silencio que invade el bosque. {w}\nEl viento se convierte en su voz y el psiturismo en sus palabras."
     "Los testigos de la oscuridad guardan con reticencia la inefable verdad. {w}Escapando de la mirada humana, escondiéndose entre las ramas de los secretistas con temor."
-    "La razón de tal miedo... {w}La leí una vez hace mucho tiempo. {w}Escondido en la esquina menos apreciada{w=0.3}, con los ojos entrecerrados tratando de distinguir las letras de un libro descolorido y polvoriento."
+    "La razón de tal miedo... \n\n{w}La leí una vez hace mucho tiempo. {w}Escondido en la esquina menos apreciada{w=0.3}, con los ojos entrecerrados tratando de distinguir las letras de un libro descolorido y polvoriento."
     nvl clear
 
     scene scen mors8
     $ color_mode = "blue"
-    call mode_derecha from _call_mode_derecha
+    call mode_derecha
     "En los dias en que Dios caminaba por esta tierra,{w=0.3} cuando el polvo del camino manchaba sus sandalias como las de cualquier mortal,{w=0.3} se habla una tragedia que pocos se atreven a contar." 
     "La fauna aquella,{w=0.2} criatura fiel entre las criaturas,{w=0.2} lo contempló desde la maleza.{w=0.3} En su pecho,{w=0.2} escondia algo que ninguna bestia había sentido antes."
     "Amor{w}, por una hija de hombre,{w=0.2} una mujer de voz suave y manos callosas que olían a tierra mojada."
@@ -82,12 +84,12 @@
     nvl clear
     play audio pageturn volume 0.7
 
-    window hide None
+    window hide
     scene black
     pause 0.5
-    window show None
+    window show
 
-    call mode_izquierda from _call_mode_izquierda_1
+    call mode_izquierda
     $ color_mode = "orange"
     scene scen mors7     
     show side mors4:
@@ -130,12 +132,12 @@
     $ _history = True
     $ if _history_list: _history_list[-1].what = "De una rama cae un montículo de nieve, y otro, y otro."
     "Como niños luego de la primera nevada, la lanzan buscando mi atención."
+    nvl clear
+
     "—Oye."
     "Una de las ramas se inclina, {w=0.3}crujiendo."
     "—¿Por qué sigues pisandolas?"
     "Abro mi boca para responder, pero no sale más que un sonido ahogado y patetico.{w=0.3} Sujeto mi garganta con ambas manos, intentando calmar el ardor. {w}\n\nLos árboles explotan en carcajadas."
-    nvl clear
-
     "Dejo caer las retoricas infantiles sobre mi cuerpo mientras avanzo.{w=0.3} Las huellas en el piso parecen dar giros incomodos, hasta que se paran y dan la vuelta."
     "Las risas empiezan a apagarse y los arboles empiezan a separarse más unos de los otros hasta que el bosque se convierte en un claro."
     "Contrastando con el resto del escenario, {w=0.3}en medio de todo me encuentro con un macizo de flores."
@@ -149,24 +151,6 @@
     "{size=+20}{cps=11}. . ."
     "{cps=15}Pero me doy la vuelta."
     "Hacia ese sendero de pisadas superpuestas, borrosas por la nieve que ya cayó."
-
-    window hide None
-    scene black
-    pause 2.0
-    show undertale at truecenter:
-        zoom 3.0
-    show text "Prólogo - Mors":
-        ypos 0.6
-    pause 2.0
-    hide undertale
-    hide text
-    pause 2.0
-
-    jump luctus_negatio
-
-    stop music
-    scene black
-    $ color_mode = "orange"
         
     scene scen mors1
     nvl clear
@@ -187,7 +171,7 @@
     "En este incognito me atrevo a levantar la mirada.{w=0.3} Con mis manos aprieto mi craneo y lo obligo a levantarse,"
 
     window hide
-    call mode_izquierda from _call_mode_izquierda
+    call mode_izquierda
     show scen mors3
     pause 4.3
     scene scen mors1
@@ -246,32 +230,21 @@
     extend "\n\nTengo {fast}{cps=6}que, \n\nTengo {fast}{cps=6}que,{nw}"
     extend "\n\nTengo que,{fast}{nw} \n\nTengo que,{fast}{nw}"
     "Quiero gritar,{w=0.3} pero las llamas me enfrian los huesos y el humo me quema la garganta convirtiendo las palabras en cenizas."
-    nvl clear
 
-    play audio bell volume 0.9
-    "..."
 
-    "El fuego está caliente,{w=0.3} le quema la punta de los dedos,{w=0.3} le quema el cuerpo.{w=0.3} La quema.{w=0.3} El olor es insoportable y mis pies no se mueven y mis manos no se mueven y yo no me muevo y el olor sigue ahí y el olor no para." 
-    "{cps=24}Quiero correr hacia delante,{w=0.3} {color=#f00}quiero devolverme y huir.{/color}{w=0.3}" 
-    "El té siempre se le olvidaba.{w=0.3} Lo dejaba reposar porque estaba muy caliente, cuando se acordaba ya estaba helado y lo empujaba a un lado como si no fuera culpa suya."
-    "{cps=6}Es culpa mía."
-
-    "{cps=12}El humo sube y la multitud no se calla,{w=0.3} algo en mi pecho se aprieta como si alguien metiera la mano y cerrara el puño,{cps=24}{w=0.2} y yo sigo sin moverme,{cps=36}{w=0.1} sigo sin moverme,{cps=48} sigo{nw}"
-    nvl clear
-
-    "{cps=6}Quiero sacarla de ahí,{w=0.3}{cps=12} tengo que,"
-    "{cps=6}Tengo que, \n\n{cps=12}Tengo que,{nw}"
-    extend "\n\nTengo {fast}{cps=6}que, \n\nTengo {fast}{cps=6}que,{nw}"
-    extend "\n\nTengo que,{fast}{nw} \n\nTengo que,{fast}{nw}"
-    window hide None
+    window hide
     scene black
-    pause 0.2
-    stop music
-    play audio bell volume 1.0
-    pause 1.0
-    nvl clear
-    window show None
-    scene scen mors7
+    pause 2.0
+    show undertale at truecenter:
+        zoom 3.0
+    show text "Prólogo - Mors":
+        ypos 0.6
+    pause 2.0
+    hide undertale
+    hide text
+    pause 2.0
+
+    jump luctus_negatio
 
 ##Notas que ns donde más poner:
 #Para cgs esconder la ventana, mostrar la imagen y luego cambiar el tipo de ventana a cg (más ADV like)
