@@ -11,61 +11,12 @@ label luctus_negatio:
     pause
     hide text
 
-    call mode_derecha
-    $ color_mode= "default"
-    
-
-    "Despierto con los ojos entrecerrados y el sol golpeando con una amabilidad limitada,{w=0.1} mis retinas duelen levemente ante los rayos mañaneros que parecen caer de manera intencional directo desde la ventana hasta mi vista." 
-    
-    "Tapo mi cara con mi antebrazo,{w=0.2} recostandome en él mientras inclino ligeramente la espalda para estirar el cuerpo."
-    
-    pav "Ay ay ay"
-
-    "Siento un dolor agudo en el cuello y me incorporo de inmediato, paso la mano por la zona sobandola mientras me sigo quejando en voz baja. No es la primera vez que me pasa pero parezco no aprender la lección."
-
-    nvl clear
-
-    "Los pajaros me consuelan con una suave canción,{w=0.1} puedo sentir el aleteo de las palomas junto a sus siluetas apoyarse en el alféizar,{w=0.1} donde tengo un plato con migajas de pan añejo."
-    
-    "Levanto la mirada y las observo comer,{w=0.2} su sombra trae confort a mi vista." 
-
-    "Mi estomago pronto empezó a envidiar el desayuno de las aves,{w=0.1} una procesión de burbujas ecomienza una danzar en mis entrañas haciendo sonar sus pasos con un eco que rebotó por toda la habitación." 
-    
-    "Mis mejillas enrojecen y me levanto de golpe, tirando la silla en la que estaba sentado."
-
-    #*sonido de palomas volando*
-
-    "Las palomas exaltadas por el movimiento repentino alzan en vuelo. Las miro irse, arrepentido." 
-
-    "No hay nadie más que yo aquí."
-
-    pav "¿De qué estoy escapando?"
-
-    "Frustrado me revuelvo pelo mientras camino hacia la cocina, el piso rechina ligeramente, y hace un mal sustito del cantico ya desvanecido de los pajaritos madrugadores. Cuando llego, me paro de puntillas para abrir la alacena. Estiro mis patas lo más que puedo, pero mis dedos apenan rozan con el objetivo." 
-    
-    "Suspiro y muevo el taburete escondido entre los muebles para subirme." 
-    
-    "Con mi nueva altura busco en la alacena el frasco más escondido —enemigo declarado de la luz y el aire limpio—, y lo saco teniendo cuidado de que no se me resbale de las manos y caiga, arruinando las raciones de emergencia."
-
-    "Intento abrir el recipiente, aprieto con fuerza la tapa y la intento girar en todas las direcciones posibles, pero no cede." 
-
-    pav "¿Dónde está Mar cuando uno lo necesita?"
-
-    "..."
-
-    pav "¿Dónde estará...?"
-
-    "Agito la la cabeza para despejar mi mente, y en un ultimo intento, tiro la tapa hacia arriba con toda mi fuerza." 
-
-    "Parece ser la respuesta correcta, pues inmediatamente la tapa se separa del recipiente, pero el tirón de mi mano se lleva a mi cuerpo consigo, y caigo de espaldas contra el piso."
-
-    "* Thud * "
-
     scene scen nega3
     $ color_mode = "green"
-    call mode_medio from _call_mode_medio
+    call set_mode("medio")
     "El gato,{w=0.3} que no parece haber entendido mi duda,{w=0.3} se restriega por mi pierna maullando para que lo acaricie."
-    "Le susurro un maullido devuelta{cps=2.0}... {cps=12}pero no me responde,{w=0.2} en vez de eso muestra su abdomen,{w=0.2} y yo me agacho para acariciarlo."
+    "Le susurro un maullido devuelta{cps=2.0}... {nw}" 
+    extend "pero no me responde,{w=0.2} en vez de eso muestra su abdomen,{w=0.2} y yo me agacho para acariciarlo."
     "—Hey chico,{w=0.3} ya está tu pedido."
     "«Ah.»"
     nvl clear
@@ -193,24 +144,15 @@ label luctus_negatio2:
     mar "i have feelings for you"
     pav "i have feelings for you too"
     "the feeling was friendship"
-    return
+    pav "..."
+    "Con el aire de nostalgia que llegó junto a un viejo amigo, los recuerdos llenan mi mente y divago mirando las nubes."
+    "Aquella que no llegó a ser mi madre, pero no fue menos, es el centro de mi atención."
+    "El té siempre se le olvidaba.{w=0.3} Lo dejaba reposar porque estaba muy caliente, cuando se acordaba ya estaba helado y lo empujaba a un lado como si no fuera culpa suya."
+    "{cps=6}Es culpa mía."
+    "Imitando un casamiento,{w=0.2} las campanas resuenan haciendo eco en las veredas,{w=0.2} me van a volver loco,{w=0.3} suenan,{cps=24} y suenan,{w=0.25}{cps=36} y suenan,{w=0.2}{cps=48} y suenan,{w=0.15}{cps=60} y suenan,{w=0.1}{cps=72} y suenan,{w=0.1} y suenan,{w=0.1} y suenan,{w=0.1} y suenan,{w=0.1} y suenan."
+    "Me pregunto si habrá amado como aquellos en las bodas." 
+    "Hace años dejé de creer en el dios cretino del que tanto me hablaron,{w=0.2} me pregunto{w=0.2} ¿Le habrá rezado?{w=0.2} ¿Se habrá puesto de rodillas ante una ventana y deseado con todas sus fuerzas no morir?"
 
-##Escena 2 (mover a cap 1):
-#"Me despierto con los ojos cerrados, un frio punzante me eriza la piel."
-#show pavel neutral at right
-#mar "Pavel, vamos, tienes que despertar. "
-#show pavel neutral at left
-#pav "Mmmm okay."
-#show pavel enojado at right
-#mar "¿porqué tenemos el mismo sprite..?"
-#show pavel dudoso at left
-#pav "qué."
-#"Sin querer seguir su destino me sujeté fuerte de la pared con una mano."
-#mar"Abre los ojos, dios."
-#"Y los abrí, pero no habia ningún dios{w}, o al menos yo no lo ví."
-#"La oscuridad de la habitación se me hacia ver tanto como veia cuando los tenia cerrados."
-#"Así que los cerré." 
-#pav "pico pal que lee xdxdxdxd"
-#show pavel neutral at right
-#"La pregunta cae de los árboles como la nieve."
-#El libro que encuentra pavel mientras limpia es el que compro anaraith antes de morir, lo abre para ver de qué se trata y se rie con asco. Es el libro del prólogo.
+    "Vivió una vida tan miserable como la mía,{w=0.2} significa entonces{w=0.2} ¿Que moriré también?"
+    "No,{w=0.3} no, no, no."
+    return

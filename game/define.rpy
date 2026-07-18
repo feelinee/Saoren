@@ -31,22 +31,6 @@ define color_enfocado = {
     "green" :  '#10b777'
 }
 
-define color_burbuja_izq = {
-    "default": "#4e7ea0",
-    "blue":    "#3a6a8c",
-    "red":     "#7a4e4e",
-    "orange":  "#ed8856",
-    "green":   "#63959c",
-}
-
-define color_burbuja_der = {
-    "default": "#a0714e",
-    "blue":    "#5a6e8c",
-    "red":     "#9c4e4e",
-    "orange":  "#5a3c40",
-    "green":   "#5c8c79",
-}
-
 ## Voces
 
 init -1 python:
@@ -72,63 +56,6 @@ init -1 python:
             elif event == "slow_done" or event == "end":
                 renpy.music.stop(channel="typing")
         return type_sound
-
-init python:
-
-    class ColaDeBurbuja(renpy.Displayable):
-        """
-        Triángulo que apunta hacia el personaje que habla.
-        lado  : "izquierda" o "derecha"
-        color : hex string e.g. "#4e7ea0"
-        """
-        def __init__(self, lado, color, ancho=13, alto=24, **properties):
-            super(ColaDeBurbuja, self).__init__(**properties)
-            self.lado  = lado
-            self.color = color
-            self.ancho = ancho
-            self.alto  = alto
-
-        def render(self, width, height, st, at):
-            w, h_dim = self.ancho, self.alto
-            surf   = renpy.Render(w, h_dim)
-            canvas = surf.canvas()
-            h = self.color.lstrip('#')
-            c = (int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16), 255)
-            if self.lado == "izquierda":
-                pts = [(w, 2), (w, h_dim - 2), (0, h_dim // 2)]
-            else:
-                pts = [(0, 2), (0, h_dim - 2), (w, h_dim // 2)]
-            canvas.polygon(c, pts)
-            return surf
-
-        def visit(self):
-            return []
-
-    # ── Registro estático ─────────────────────────────────────────────────────
-    _burbuja_cfg = {}
-
-    def registrar_burbuja(nombre, lado):
-        _burbuja_cfg[nombre] = {"lado": lado}
-
-    def burbuja_de(who):
-        if who is None:
-            return None
-        return _burbuja_cfg.get(who, None)
-
-init 1 python:
-    registrar_burbuja("Pavel",    "izquierda")
-    registrar_burbuja("Marcille", "derecha")
-
-style nvl_burbuja_quien:
-    size 13
-    bold True
-    outlines []
-    kerning 0.5
-
-style nvl_burbuja_texto:
-    size 16
-    outlines []
-    line_spacing 4
 
 ## Pavel Sprites
 
@@ -160,6 +87,7 @@ image side mors2 = "images/side/mors/side_mors_2.png"
 image side mors3 = "images/side/mors/side_mors_3.png"
 image side mors4 = "images/side/mors/side_mors_4.png"    
 image side mors5 = "images/side/mors/side_mors_5.png"   
+image side mors6 = "images/side/mors/side_mors_6.png" 
 
 ## Scenes
 
@@ -186,3 +114,9 @@ image scen nega5 = "images/scenes/negatio/scene_negatio_5.png"
 
 image pav nega1= "images/pjs/pavel/pav_nega1.png"
 image mar nega1= "images/pjs/marcille/mar_nega1.png"
+
+## Cgs
+
+#Mors
+
+image cg mors1="images/cgs/mors/cgs_mors_3.png"

@@ -354,7 +354,7 @@ define gui.history_spacing = 0
 ## hablante.
 define gui.history_name_xpos = 233
 define gui.history_name_ypos = 0
-define gui.history_name_width = 233
+define gui.history_name_width = 0
 define gui.history_name_xalign = 1.0
 
 ## Posición, anchura y alineación del texto del diálogo.
@@ -437,11 +437,11 @@ init python:
     def small():
 
         ## Tamaños de letra.
-        gui.text_size = 45
+        gui.text_size = 42
         gui.name_text_size = 54
         gui.notify_text_size = 38
-        gui.interface_text_size = 45
-        gui.button_text_size = 45
+        gui.interface_text_size = 43
+        gui.button_text_size = 43
         gui.label_text_size = 51
 
         ## Ajusta la colocación de la caja de texto.
