@@ -13,102 +13,75 @@ label luctus_negatio:
 
     scene scen nega3
     $ color_mode = "green"
-    call set_mode("medio")
-    "El gato,{w=0.3} que no parece haber entendido mi duda,{w=0.3} se restriega por mi pierna maullando para que lo acaricie."
-    "Le susurro un maullido devuelta{cps=2.0}... {nw}" 
-    extend "pero no me responde,{w=0.2} en vez de eso muestra su abdomen,{w=0.2} y yo me agacho para acariciarlo."
-    "—Hey chico,{w=0.3} ya está tu pedido."
-    "«Ah.»"
+    call set_mode("nadie")
+
+    "El gato me devuelve la mirada, mientras tira de mi unica protección contra los vientos atraidos por la marea y los ojos de los indiscretos atraidos hacia mí, entre mis brazos atenta contra mi paz."
+
+    "Desenredo sus garras de entre los hilos de la tela, con cuidado de no dañar sus fragiles pero dolorosas garras, pensando en si su asalto fue una respuesta negativa a mi divagar o no más que un pequeño jugueteo."
+
+    "A pesar del frío de la tarde que acompaña el pleno otoño, puedo sentir como una calidez comparable con el sol invade mi pecho y se apoya en mis mejillas."
+
+    "Una pregunta surge de entre los maullidos."
+
+    vend "¿Esto es todo?"
+
+    "Con un leve empujón, le obligó a bajar de entre mis brazos y terminar nuestro encuentro de corta duración, en el piso empieza a dar vueltas en si mismo persiguiendo su cola, levemente mareado termina su pequeña pirueta y finalmente se apoya en mi pierna."
     nvl clear
+
+    "¿Cuál es el nombre del gato?"
+
+    "Le quiero preguntar al hombre frente a mí. Abro mi bolso, y busco entre mis cosas un pequeño cuarderno. Arranco una hoja con un mensaje previamente escrito, y lo entrego junto a un par de monedas desgastadas."
+    nvl clear
+
+    call set_mode("derecha")
+    show rside nega1 at right
+    "Gracias."
+
+    "Es lo unico que puedo pronunciar sin mi voz."
+
+    hide rside
+    call set_mode("nadie")
+    "El hombre mira a su alrededor y me indica con la mano que me acerque. Dudoso, hago caso a su petición y pronto me habla entre susurros."
+
+    vend "No sé si lo notaste ya, pero desde hace un rato que alguien te está siguiendo. Si vas a meterte en problemas, hazlo lejos de mi tienda."
+
+    "Asiento inseguro, y tomo la bolsa del mostrador mientras doy pasos atrás."
+    nvl clear
+
+    "Busco entre mi cuarderno la hoja suelta donde tengo anotada mi lista. La tranqulidad con la que habia llegado se fue sin mi."
     
-    "Me levanto,{w=0.3} y rapidamente me limpio las manos en la chaqueta, sacando una pequeña libreta de mi bolso junto con un par de monedas."
-    "El señor apunta todo lo que hay en ella para comprobar que no falte nada."
-    "Recibo la bolsa y arranco una de las páginas para entregarsela."
-    "\"Gracias.\""
-    nvl clear
-
-    "Voy a la ultima hoja de la libreta, donde tengo mi lista de compras para hoy."
-    nvl clear
-
-    "LISTA DE COMPRAS ₍^. .^₎\n————————————————————————{fast}{w=0.3}{nw}"
-    "— {s}2 Manzanas{/s}{fast}{w=0.3}{nw}"
-    "— {s}1kg de harina{/s}{fast}{w=0.3}{nw}" 
-    "— Huevo{fast}{w=0.3}{nw}"
-    "— Mantequilla{fast}{w=0.3}{nw}"
-    "— 2 de pan{fast}{w=0.3}{nw}"
-    "— Ramo de flores{fast}"
-    nvl clear
-
-    "Lo guardo momentaneamente y tomo mi monedero, dejando caer las monedas en mi mano."
-    "«Dos...{w=0.3} Seis...{w=0.3} Doce...»"
-    "«Solo me quedan dieciocho fides...»"
-    "«...»"
-    "Saco mi libreta nuevamente y anoto de todas maneras."
-    nvl clear
-
-    "LISTA DE COMPRAS ₍^. .^₎\n————————————————————————{fast}{w=0.3}{nw}" 
-    "— {s}2 Manzanas{/s}{fast}{w=0.3}{nw}"
-    "— {s}1kg de harina{/s}{fast}{w=0.3}{nw}" 
-    "— Huevo{fast}{w=0.3}{nw}"
-    "— Mantequilla{fast}{w=0.3}{nw}"
-    "— 2 de pan{fast}{w=0.3}{nw}"
-    "— Ramo de flores{fast}{w=0.3}{nw}"
-    "— Comida para gatos"
-    nvl clear
-
-    "Si la chica de las flores —olvide su nombre de nuevo—, tiene un ramo en oferta, podre comprarlo."
-    "Me agacho una ultima vez y llamo al gato con un gesto de mis manos."
-    "..."
-    "Pronto se acerca y se deja acariciar por mi. "
-    "«La siguiente vez que te vea, espero poder traerte algo de regalo»."
-    nvl clear
-
-    "Empiezo a caminar hacia el siguiente puesto,"
-    nvl clear
-
     "LISTA DE COMPRAS ₍^. .^₎\n————————————————————————{fast}{w=0.3}{nw}"
     "— {s}2 Manzanas{/s}{fast}{w=0.3}{nw}"
     "— {s}1kg de harina{/s}{fast}{w=0.3}{nw}"
-    "— Huevo{fast}{w=0.3}{nw}"
-    "— Mantequilla{fast}{w=0.3}{nw}"
-    "— {s}2 de pan{/s}{w=0.3}{nw}"
-    "— Ramo de flores{fast}{w=0.3}{nw}"
-    "— Comida para gatos{fast}"
-    nvl clear
-
-    "Empiezo a caminar hacia el siguiente puesto,{fast} y el siguiente,"
-    nvl clear
-
-    "LISTA DE COMPRAS ₍^. .^₎\n————————————————————————{fast}{w=0.3}{nw}"
-    "— {s}2 Manzanas{/s}{fast}{w=0.3}{nw}"
-    "— {s}1kg de harina{/s}{fast}{w=0.3}{nw}"
-    "— {s}Huevo{/s}{w=0.3}{nw}"
-    "— {s}Mantequilla{/s}{w=0.3}{nw}"
+    "— {s}Huevo{/s}{fast}{w=0.3}{nw}"
+    "— {s}Mantequilla{/s}{fast}{w=0.3}{nw}"
     "— {s}2 de pan{/s}{fast}{w=0.3}{nw}"
     "— Ramo de flores{fast}{w=0.3}{nw}"
-    "— Comida para gatos{fast}"
+    "— Carne deshidratada{fast}"
     nvl clear
-    
-    "Empiezo a caminar hacia el siguiente puesto, y el siguiente,{fast} y llego a un dilema..."
-    "El puesto de carne es el más cercano, si compro ahí primero luego puedo comprar las flores e irme directo a mi casa."
-    "Por otro lado, si voy primero al puesto de flores, puedo comprobar si hay una oferta antes de comprar la comida, pero me tendré que dar la vuelta dos veces..."
-    nvl clear
-    
-    "Al final creo que..."
+
+    "Inhalo profundamente el aire frio y este llena mis pulmones, reemplazando el calor que ahí se alojaba. Con un suspiro exhalo, y me imagino una estela de vapor saliendo por mi boca."
+
+    "Solo dos items quedan desmarcados en esta lista... Carne deshidratada y un ramo de flores."
+
+    "Miro dudoso el cielo nublado, en este horario la luz duerme más temprano y con su soñar llega la pesadilla de los vivos. Pretendo irme antes de las seis, pero observando el reloj del mercado encuentro imposible esa posibilidad a menos deje alguna de estas cosas pendientes para la semana."
+
+    "Miro una ultima vez la lista, y mis piernas me llevan a..."
+
     menu:
         "El puesto de flores":
-            call negatio_flores from _call_negatio_flores
+            call negatio_flores
 
         "El puesto de carne":
-            call negatio_carne from _call_negatio_carne
+            call negatio_carne
     
-    jump mapa
+    jump luctus_negatio2
 
 label negatio_carne:
     $ gato_comi = True
     $ color_mode = "orange"
     scene scen nega4
-    extend " primero voy a ir al puesto de carne."
+    extend " el puesto de carne."
     return
 
     #Pavel llega al puesto de carne y compra la comida de gato, cuando le pasa el dinero, el vendedor le susurra que tenga cuidado, pues nota que alguien venia con pavel y lo estaba mirando desde lejos, pavel se asusta y decide ir rapido al otro puesto para irse.
@@ -129,7 +102,7 @@ label negatio_carne:
 
 label negatio_flores:
     $ ana_tumba= True
-    extend " primero voy a ir al puesto de flores."
+    extend " el puesto de flores."
     return
     
 
@@ -138,6 +111,7 @@ label negatio_flores:
 label luctus_negatio2:
     nvl clear
     $ color_mode= "orange"
+    call set_mode("medio")
     scene scen nega5
     show mar nega1 at right
     show pav nega1 at left
@@ -155,4 +129,9 @@ label luctus_negatio2:
 
     "Vivió una vida tan miserable como la mía,{w=0.2} significa entonces{w=0.2} ¿Que moriré también?"
     "No,{w=0.3} no, no, no."
-    return
+    jump mapa
+
+label luctus_negatio3:
+    nvl clear
+    mar "dale pavel no seas putin"
+    pav "muerete xdxdxd"    

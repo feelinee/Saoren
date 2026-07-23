@@ -3,6 +3,9 @@
 default pos_burbuja = {
     "Pavel":    "izq",
     "Marcille": "der",
+    "Fauna": "izq",
+    "Dios": "der",
+    "Vendedor": "der",
 }
 
 ## Defines
@@ -67,7 +70,7 @@ init python:
     def burbuja_de(who):
         if who is None:
             return None
-        lado = renpy.store.pos_burbuja.get(who, None)  ## None en vez de "izq"
+        lado = renpy.store.pos_burbuja.get(who, None)
         if lado is None:
             return None
         return {"lado": lado}

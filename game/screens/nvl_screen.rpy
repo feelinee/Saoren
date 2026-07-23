@@ -1,18 +1,19 @@
 ## Defaults
 
-default text_mode  = "default"
-default nvl_bg     = "gui/nvl/nvl1.png"
-default text_xpos  = 120
-default text_ypos  = 140
-default text_xsize = 1680
+default text_mode          = "default"
+default nvl_bg             = "gui/nvl/nvl1.png"
+default text_xpos          = 120
+default text_ypos          = 140
+default text_xsize         = 1680
+default text_burbuja_ancho = 450
 
 ## Defines
 
 define _cfg_modos = {
-    "nadie":     {"bg": "gui/nvl/nvl1.png", "xpos": 220, "ypos": 140, "xsize": 1480},
-    "derecha":   {"bg": "gui/nvl/nvl2.png", "xpos": 180, "ypos": 140, "xsize": 1000},
-    "izquierda": {"bg": "gui/nvl/nvl3.png", "xpos": 750, "ypos": 140, "xsize": 1000},
-    "medio":     {"bg": "gui/nvl/nvl4.png", "xpos": 750, "ypos": 140, "xsize": 450},
+    "nadie":     {"bg": "gui/nvl/nvl1.png", "xpos": 220, "ypos": 140, "xsize": 1480, "burbuja": 1510.31},
+    "derecha":   {"bg": "gui/nvl/nvl2.png", "xpos": 180, "ypos": 140, "xsize": 1000, "burbuja": 1017},
+    "izquierda": {"bg": "gui/nvl/nvl3.png", "xpos": 750, "ypos": 140, "xsize": 1000, "burbuja": 1017},
+    "medio":     {"bg": "gui/nvl/nvl4.png", "xpos": 750, "ypos": 140, "xsize": 450,  "burbuja": 450},
 }
 
 define config.nvl_list_length = gui.nvl_list_length
@@ -38,12 +39,13 @@ style nvl_label:
 ## Labels
 
 label set_mode(modo):
-    $ _m         = _cfg_modos[modo]
-    $ text_mode  = modo
-    $ nvl_bg     = _m["bg"]
-    $ text_xpos  = _m["xpos"]
-    $ text_ypos  = _m["ypos"]
-    $ text_xsize = _m["xsize"]
+    $ _m               = _cfg_modos[modo]
+    $ text_mode        = modo
+    $ nvl_bg           = _m["bg"]
+    $ text_xpos        = _m["xpos"]
+    $ text_ypos        = _m["ypos"]
+    $ text_xsize       = _m["xsize"]
+    $ text_burbuja_ancho = _m["burbuja"]
     return
 
 ## Screens
@@ -86,31 +88,26 @@ screen nvl_entrada(d):
         id d.window_id
         background None
         xfill True
-        if text_mode == "medio":
-            use nvl_modo_medio(d)
+
+        $ _cfg_b = burbuja_de(d.who)
+
+        if _cfg_b:
+            $ _lado        = _cfg_b["lado"]
+            $ _ancho_frame = int(text_burbuja_ancho * 0.97)
+            $ _ancho_texto = _ancho_frame - 24
+            $ _color_izq   = color_burbuja_izq.get(color_mode, "#373737")
+            $ _color_der   = color_burbuja_der.get(color_mode, "#0a0a0a")
+
+            if _lado == "izq":
+                use nvl_burbuja(d, "izq", _color_izq, _ancho_frame, _ancho_texto)
+            else:
+                use nvl_burbuja(d, "der", _color_der, _ancho_frame, _ancho_texto)
         else:
             use nvl_modo_normal(d)
 
 
-screen nvl_modo_medio(d):
-    $ _cfg_b       = burbuja_de(d.who)
-    $ _lado        = _cfg_b["lado"] if _cfg_b else None
-    $ _ancho_frame = int(text_xsize * 0.97)
-    $ _ancho_texto = _ancho_frame - 24
-    $ _color_izq   = color_burbuja_izq.get(color_mode, "#373737")
-    $ _color_der   = color_burbuja_der.get(color_mode, "#0a0a0a")
-
-    if _cfg_b and _lado == "izq":
-        use nvl_burbuja(d, "izq", _color_izq, _ancho_frame, _ancho_texto)
-    elif _cfg_b and _lado == "der":
-        use nvl_burbuja(d, "der", _color_der, _ancho_frame, _ancho_texto)
-    else:
-        use nvl_modo_normal(d)
-
-
 screen nvl_burbuja(d, lado, bcolor, ancho_frame, ancho_texto):
     $ _bg_b = Transform(Solid(bcolor), alpha=0.8)
-    text "" id d.who_id
 
     if lado == "izq":
         hbox:

@@ -11,22 +11,24 @@
     nvl clear
 
     scene scen mors8
-    show side mors6 at right
+    show rside mors6 at right
     $ color_mode = "blue"
     call set_mode("derecha")
     "En los dias en que Dios caminaba por esta tierra,{w=0.3} cuando el polvo del camino manchaba sus sandalias como las de cualquier mortal,{w=0.3} se habla una tragedia que pocos se atreven a contar." 
     "La fauna aquella,{w=0.2} criatura fiel entre las criaturas,{w=0.2} lo contempló desde la maleza.{w=0.3} En su pecho,{w=0.2} escondia algo que ninguna bestia había sentido antes."
     "Amor{w}, por una hija de hombre,{w=0.2} una mujer de voz suave y manos callosas que olían a tierra mojada."
     "Se postró ante los pies de su divinidad y rogó." 
-    "—Oh Señor mío... {w=0.3}por tu divinidad y tu misericordia, concédeme este deseo. {w}Me he enamorado de una mujer. Yo entiendo cada una de sus palabras, más ella no entiende las mías.{w=0.3} Soy invisible a sus ojos."
+    fau "Oh Señor mío... {w=0.3}por tu divinidad y tu misericordia, concédeme este deseo." 
+    fau "Me he enamorado de una mujer."
+    fau "Yo entiendo cada una de sus palabras, más ella no entiende las mías.{w=0.3} Soy invisible a sus ojos."
     "Y Dios, que conoce el peso de todos los corazones, en compasión se detuvo a comprender."
     nvl clear
     play audio pageturn volume 1
 
-    "—Te otorgaré el don del habla, para que habites entre mis hijos como uno más.{w} No obstante, eres de otra naturaleza, y la naturaleza desconoce la integridad de las palabras."
+    dios "Te otorgaré el don del habla, para que habites entre mis hijos como uno más.{w} No obstante, eres de otra naturaleza, y la naturaleza desconoce la integridad de las palabras."
     "Entonces se agachó lentamente y le susurró a la oreja. Con el crujir de los arboles y el silencio de las rocas acompañandolos como unicos atestiguantes."
     "Cuando se enderezó, su voz resonó con la gravedad de las cosas eternas." 
-    "—Este pacto es el precio de tu voz. Como demostración de tu lealtad, jurarás nunca revelar este secreto. Ni a la tierra, ni al agua, ni al ser que más ames."
+    dios "Este pacto es el precio de tu voz. Como demostración de tu lealtad, jurarás nunca revelar este secreto. Ni a la tierra, ni al agua, ni al ser que más ames."
     "Y la bestia juró, y partió disfrazada de hombre, cargando un nuevo rostro y una promesa consigo."
     nvl clear
     play audio pageturn volume 1
@@ -35,40 +37,43 @@
     play sound soundrain loop volume 1.0
     $ renpy.music.set_volume(0.1, channel="sound")
     "En una noche de lluvia, con las velas casi consumidas y el sonido del agua golpeando el techo de barro, él tomó la mano de su esposa y comenzó a hablar despacio, con el sosiego de un pecador en un confesionario."
-    "—Oh amor mío...{w=0.3} Tenemos un lazo eterno, pero traigo un peso en el corazón que ya no puedo sostener solo."
-    "—Comparte tu tristeza —le respondió ella, sin soltar su mano."
+    fau "Oh amor mío...{w=0.3} Tenemos un lazo eterno, pero traigo un peso en el corazón que ya no puedo sostener solo."
+    dios"Comparte tu tristeza" 
+    "Le respondió ella, sin soltar su mano."
     "La lluvia arrecia al otro lado de la ventana, él asintió, mirando la llama reflejada en el cristal."
     nvl clear
     play audio pageturn volume 1
      
-    "—Esta es mi confesión,{w=0.2} yo te amé desde antes de que tú me amaras a mí.{w=0.3} Antes de que supieras mi nombre,{w=0.2} antes de que yo tuviera uno.{w=0.3} Tu sonrisa es mi razón de existir,{w=0.2} porque Dios mismo me concedió el deseo de estar a tu lado."
-    "—A cambio de esa bendición,{w=0.2} me pidió que guardara su secreto.{w=0.3} Y lo he guardado.{w=0.3} Años he cargado ese silencio como una piedra en el pecho.{w=0.3} Pero mentirte a ti se me hace más pesado aún."
+    fau "Esta es mi confesión,{w=0.2} yo te amé desde antes de que tú me amaras a mí.{w=0.3} Antes de que supieras mi nombre,{w=0.2} antes de que yo tuviera uno.{w=0.3} Tu sonrisa es mi razón de existir,{w=0.2} porque Dios mismo me concedió el deseo de estar a tu lado."
+    fau "A cambio de esa bendición,{w=0.2} me pidió que guardara su secreto.{w=0.3} Y lo he guardado.{w=0.3} Años he cargado ese silencio como una piedra en el pecho.{w=0.3} Pero mentirte a ti se me hace más pesado aún."
     "La vela parpadeó."
-    "—Así que lo diré.{w=0.2} Confío en ti, y en que junto a mí, a la tumba te lo llevarás."
+    fau "Así que lo diré.{w=0.2} Confío en ti, y en que junto a mí, a la tumba te lo llevarás."
     "Sus ojos se encontraron con los de ella en la penumbra,{w=0.2} y él abrió la boca para pronunciar lo que {color=#f00}nunca debía ser pronunciado.{/color}"
+    nvl clear
+    play audio pageturn volume 1
     stop music
+    
     $ _history = False
     $ renpy.music.set_volume(0.2, channel="sound")
-    "{cps=50}—DIOS ES** *UE*** * *O**TR** L* ***AM**{nw} "
+    fau "{cps=50}DIOS ES** *UE*** * *O**TR** L* ***AM**{nw} "
     $ renpy.music.set_volume(0.3, channel="sound")
-    extend "\n\n{cps=100}—DI** **T* ****T* Y **S***O* ** M*****S{nw} "
+    fau "{cps=100}—DI** **T* ****T* Y **S***O* ** M*****S{nw} "
     $ renpy.music.set_volume(0.4, channel="sound")
-    extend "\n\n{cps=150}—*I*S **TA M***** * N******S *O *******{nw} "
+    fau "{cps=150}—*I*S **TA M***** * N******S *O *******{nw} "
     $ renpy.music.set_volume(0.5, channel="sound")
-    extend "\n\n{cps=200}—**OS **** **R*** * ******** ** *******{nw} "
+    fau "{cps=200}—**OS **** **R*** * ******** ** *******{nw} "
     $ renpy.music.set_volume(0.6, channel="sound")
-    extend "\n\n{cps=250}—***S **** ****O * ***O**** ** **T****{nw} "
+    fau "{cps=250}—***S **** ****O * ***O**** ** **T****{nw} "
     $ renpy.music.set_volume(0.7, channel="sound")
-    extend "\n\n{cps=300}—**** *S** ****** * ******** ** *A***O*{nw} "
+    fau "{cps=300}—**** *S** ****** * ******** ** *A***O*{nw} "
     $ renpy.music.set_volume(0.8, channel="sound")
-    extend "\n\n{cps=350}—**** **** ****** * ******** ** *******{nw} "
+    fau "{cps=350}—**** **** ****** * ******** ** *******{nw} "
     $ renpy.music.set_volume(0.9, channel="sound")
-    extend "\n\n{cps=450}—**** **** ****** * ******** ** *******{nw} "
+    fau "{cps=450}—**** **** ****** * ******** ** *******{nw} "
     $ renpy.music.set_volume(1.0, channel="sound")
-    extend "\n\n{cps=500}—**** **** ****** * ******** ** *******{nw} "
-    extend "\n{fast}{nw} "
+    fau "{cps=500}—**** **** ****** * ******** ** *******{nw} "
     $ _history = True
-    $ if _history_list: _history_list[-1].what = "—La curiosidad mató al gato, y te matara a ti."
+    $ if _history_list: _history_list[-1].what = "La curiosidad mató al gato, y te matara a ti."
     stop sound
     $ renpy.music.set_volume(1.0, channel="sound")
     nvl clear
@@ -93,23 +98,23 @@
     call set_mode("izquierda")
     $ color_mode = "orange"
     scene scen mors7     
-    show side mors4:
+    show lside mors4:
         xalign 0.0 yalign 1.0
     "Puedo escuchar a los árboles hablar."
     "Pero no escucho sus poesías,{w=0.2} sus risas rechinan como una cama vieja y desgastada,{w=0.2} y los golpeteos de las ramas caen acompasados,{w=0.2} como los pasos de la oscuridad que me persigue detrás."
     "En la frondosidad del bosque, la nieve se queda suspendida entre las ramas sin llegar al suelo."
-    show side mors2 at left:
+    show lside mors2 at left:
         yalign 0.0
         linear 40.0 yalign 1.0
     nvl clear
 
     "El rastro bajo mis pies continua hacia delante,{w=0.3} las marcas de las suelas de un par de zapatos desgastados están enterradas profundas en la nieve,{w=0.3} impresas con \nuna firmeza que me resulta ajena. {w}\n\nLas sigo, {w=0.3}mientras los copos empiezan a caer como\n{cps=50}lluvia {cps=100}hirviendo{nw}"
     $ _history = False
-    show side mors3 at left
+    show lside mors3 at left
     extend "oooooooooooooooooooooooooooooooooooo{cps=200}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=300}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=400}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=500}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=600}\noooooooooooooooooooooooooooooooooooooooooooooooooooo\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=700}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=800}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=900}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=1000}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=1100}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{nw}"
     hide side mors3
     scene scen mors7
-    show side mors2 at left:
+    show lside mors2 at left:
         linear 100.0 yalign 1.0    
     nvl clear #ARREGLE EL FLICKERING SOY LA PUTA CABRA
 
@@ -120,7 +125,7 @@
 
     "Desde las sombras de entre los troncos los animales se acercan,{w=0.2} puedo sentir su mirada y de reojo veo como inclinan su cabeza con curiosidad mórbida.{w=0.3} Una criatura con sangre de cazador y piel de presa." 
     "{cps=1.5}... {cps=12}¿O es al revés?" 
-    show side mors4 at left:
+    show lside mors4 at left:
         yalign 1.0
         linear 40.0 yalign 0.0  
     "Los árboles dejan de reirse ante las frases silenciosas de los animales, y empiezan a susurrar entre ellos."       
@@ -142,7 +147,7 @@
     "Dejo caer las retoricas infantiles sobre mi cuerpo mientras avanzo.{w=0.3} Las huellas en el piso parecen dar giros incomodos, hasta que se paran y dan la vuelta."
     "Las risas empiezan a apagarse y los arboles empiezan a separarse más unos de los otros hasta que el bosque se convierte en un claro."
     "Contrastando con el resto del escenario, {w=0.3}en medio de todo me encuentro con un macizo de flores."
-    show side mors5 at left:
+    show lside mors5 at left:
         yalign 0.0
         linear 40.0 yalign 1.0  
     "Un campo de Asfodelos teñidos de rojo, con cenizas esparcidas en sus petalos como lo harian gotas de agua. {w=0.3}Alrededor suyo no hay nada, el camino termina ahí."          
@@ -217,7 +222,7 @@
             linear 2.2 ypos 0.16
             repeat
 
-    show side mors1 at left:
+    show lside mors1 at left:
         ypos 1.4
         block:
             linear 2.2 ypos 1.38
@@ -240,7 +245,7 @@
             linear 2.2 ypos 0.16
             repeat
 
-    show side mors1 at left:
+    show lside mors1 at left:
         ypos 1.4
         block:
             linear 2.2 ypos 1.38
@@ -253,7 +258,7 @@
     nvl clear
 
     hide cg 
-    hide side
+    hide lside
     window hide
     show scen mors6
     show text "{color=#f00}ME MIRA DE VUELTA.{/color}"
@@ -299,7 +304,7 @@
             linear 2.2 ypos 0.16
             repeat
 
-    show side mors1 at left:
+    show lside mors1 at left:
         ypos 1.4
         block:
             linear 2.2 ypos 1.38

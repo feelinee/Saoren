@@ -9,8 +9,13 @@ define pav = Character("Pavel", kind=nvl)
 define ana = Character("Anaraith", kind=nvl)
 define mar = Character("Marcille", kind=nvl)
 define asf = Character("Asfodel", kind=nvl)
+
+define fau = Character("Fauna", kind=nvl)
+define dios = Character("Dios", kind=nvl)
 define qn = Character("???",  kind=nvl)
 define narrator = Character(None, kind=nvl)
+define vend = Character("Vendedor", kind=nvl)
+
 define menu = nvl_menu
 
 #callback=make_type_sound(sounds_default)
@@ -82,12 +87,14 @@ image pavel anaraith2:
 
 # Mors
 
-image side mors1 = "images/side/mors/side_mors_1.png"
-image side mors2 = "images/side/mors/side_mors_2.png"
-image side mors3 = "images/side/mors/side_mors_3.png"
-image side mors4 = "images/side/mors/side_mors_4.png"    
-image side mors5 = "images/side/mors/side_mors_5.png"   
-image side mors6 = "images/side/mors/side_mors_6.png" 
+image lside mors1 = "images/side/mors/side_mors_1.png"
+image lside mors2 = "images/side/mors/side_mors_2.png"
+image lside mors3 = "images/side/mors/side_mors_3.png"
+image lside mors4 = "images/side/mors/side_mors_4.png"    
+image lside mors5 = "images/side/mors/side_mors_5.png"   
+image rside mors6 = "images/side/mors/side_mors_6.png" 
+
+image rside nega1 = "images/side/negatio/side_negatio_1.png" 
 
 ## Scenes
 

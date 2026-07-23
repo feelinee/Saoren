@@ -20,7 +20,7 @@ label mapa:
             elif dia_mapa == 5:
                 jump mercado_d5
             elif dia_mapa == 6:
-                jump luctus_negatio2
+                jump luctus_negatio3
 
         "Libreria" if "libreria" in lugares:
             if dia_mapa == 1:
@@ -28,7 +28,7 @@ label mapa:
             elif dia_mapa == 4:
                 jump libreria_d4
             elif dia_mapa == 6:
-                jump luctus_negatio2
+                jump luctus_negatio3
 
         "Bosque" if "bosque" in lugares:
             if dia_mapa == 2:
@@ -36,7 +36,7 @@ label mapa:
             elif dia_mapa == 4:
                 jump bosque_d4
             elif dia_mapa == 6:
-                jump luctus_negatio2
+                jump luctus_negatio3
         
         "Puerto" if "puerto" in lugares:
             if dia_mapa == 2:
@@ -44,7 +44,7 @@ label mapa:
             elif dia_mapa == 5:
                 jump puerto_d5
             elif dia_mapa == 6:
-                jump luctus_negatio2
+                jump luctus_negatio3
 
         "Tumba" if "tumba" in lugares:
             jump tumba
