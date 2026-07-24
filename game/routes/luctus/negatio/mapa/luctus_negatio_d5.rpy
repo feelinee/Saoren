@@ -1,4 +1,5 @@
 label mercado_d5:
+    nvl clear
     "dia5"
     $ dia_mapa += 1
     jump mapa

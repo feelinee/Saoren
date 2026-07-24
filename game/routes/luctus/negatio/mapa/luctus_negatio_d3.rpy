@@ -1,4 +1,5 @@
 label negatio_d3:
+    nvl clear
     #pavel dice que puta paja
     "dia3pt1"
     if asfo_ramo:

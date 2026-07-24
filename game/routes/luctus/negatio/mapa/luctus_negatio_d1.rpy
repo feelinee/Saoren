@@ -1,4 +1,5 @@
 label mercado_d1:
+    nvl clear
     "dia1 mercado"
     if ana_tumba:
         "Voy a comprarle la comida al gatito"

@@ -72,21 +72,44 @@ label luctus_negatio:
         "El puesto de flores":
             call negatio_flores
 
-        "El puesto de carne":
+        "La carniceria":
             call negatio_carne
     
     jump luctus_negatio2
 
 label negatio_carne:
     $ gato_comi = True
+    extend " la carniceria."
+    nvl clear
+
+    "Con los ultimos rayos de sol de la tarde y una inceridumbre ominosa acompañandome, tomo una descisión rapido y me dirigo al puesto de carne a pocos metros de mi."
+    
     $ color_mode = "orange"
     scene scen nega4
-    extend " el puesto de carne."
+
+    "Me tapo la cara con la bufanda cuando empieza a invadir en el ambiente un olor crudo que me hace revolver el estomago. La sangre esparcida en el mostrador ensucia el precio que indica el valor de los cadaveres de los animales que se encuentran a su lado y me tengo que aguantar las ganas de vomitar."
+
+    "Los ojos de las cabezas colgadas miran hacia el piso, y en una fantasia grotesca imagino como desean recuperar su cuerpo y volver a su libertad."
+
+    "Pero se quedan colgados, y los comparo conmigo."
+    
+    "La unica desemejanza que puedo encontrar es que aún estoy respirando." 
+
+    "E incluso así, estos hombres puden elegir si quitarme eso también."
+
+    vend "¿Vas a comprar algo o te vas a quedar ahí?"
+    
+    "No me siento como nada más que ganado cuando me miran a los ojos, con la incapacidad de detener su homicidio y ponerle un precio a mis tripas."
+
+    "Ojeo lo que hay y apunto a uno de los pedazos, desviando la mirada casi inmediatamente. Le doy unas monedas y me devuelve una bolsa."
+
+    "Con la carne entre las manos me siento un poco más como un humano, puedo controlar el cuerpo inerte de esta criatura como ellos pueden controlar el mio."
+
+    "Con mi dinero despediciado "
+
     return
 
-    #Pavel llega al puesto de carne y compra la comida de gato, cuando le pasa el dinero, el vendedor le susurra que tenga cuidado, pues nota que alguien venia con pavel y lo estaba mirando desde lejos, pavel se asusta y decide ir rapido al otro puesto para irse.
-
-    #Antes de llegar a la tienda de flores, nota por el rabillo del ojo a la persona que lo está siguiendo, es bastante alto y aunque no parece tner mucha masa muscular, es suficiente para intimidarlo, decide meterse entre la muchedumbre.
+    #Pavel llega al puesto de carne y compra la comida de gato, nota por el rabillo del ojo a la persona que lo está siguiendo, es bastante alto y aunque no parece tner mucha masa muscular, es suficiente para intimidarlo, decide meterse entre la muchedumbre.
 
     #Destacando por su altura como la persona lo empieza a buscar con la mirada, por su cara tapada asume que es alguien de la iglesia y que está en peligro.
 
@@ -115,23 +138,28 @@ label luctus_negatio2:
     scene scen nega5
     show mar nega1 at right
     show pav nega1 at left
-    mar "i have feelings for you"
-    pav "i have feelings for you too"
-    "the feeling was friendship"
-    pav "..."
-    "Con el aire de nostalgia que llegó junto a un viejo amigo, los recuerdos llenan mi mente y divago mirando las nubes."
-    "Aquella que no llegó a ser mi madre, pero no fue menos, es el centro de mi atención."
-    "El té siempre se le olvidaba.{w=0.3} Lo dejaba reposar porque estaba muy caliente, cuando se acordaba ya estaba helado y lo empujaba a un lado como si no fuera culpa suya."
-    "{cps=6}Es culpa mía."
-    "Imitando un casamiento,{w=0.2} las campanas resuenan haciendo eco en las veredas,{w=0.2} me van a volver loco,{w=0.3} suenan,{cps=24} y suenan,{w=0.25}{cps=36} y suenan,{w=0.2}{cps=48} y suenan,{w=0.15}{cps=60} y suenan,{w=0.1}{cps=72} y suenan,{w=0.1} y suenan,{w=0.1} y suenan,{w=0.1} y suenan,{w=0.1} y suenan."
-    "Me pregunto si habrá amado como aquellos en las bodas." 
-    "Hace años dejé de creer en el dios cretino del que tanto me hablaron,{w=0.2} me pregunto{w=0.2} ¿Le habrá rezado?{w=0.2} ¿Se habrá puesto de rodillas ante una ventana y deseado con todas sus fuerzas no morir?"
-
-    "Vivió una vida tan miserable como la mía,{w=0.2} significa entonces{w=0.2} ¿Que moriré también?"
-    "No,{w=0.3} no, no, no."
+    #mar "cómo que se murio??"
+    #pav "..."
+    #"no puedo hablar amigo q te pasa"
+    #mar "sos re puto"
+    #"*marcille se va en re puto*"
+    #"miro la tumba"
+    #"Con el aire de nostalgia que llegó junto a un viejo amigo, los recuerdos llenan mi mente y divago mirando las nubes."
+    #"Aquella que no llegó a ser mi madre, pero no fue menos, es el centro de mi atención."
+    #"El té siempre se le olvidaba.{w=0.3} Lo dejaba reposar porque estaba muy caliente, cuando se acordaba ya estaba helado y lo empujaba a un lado como si no fuera culpa suya."
+    #"{cps=6}Es culpa mía."
+    #"Imitando un casamiento,{w=0.2} las campanas resuenan haciendo eco en las veredas,{w=0.2} me van a volver loco,{w=0.3} suenan,{cps=24} y suenan,{w=0.25}{cps=36} y suenan,{w=0.2}{cps=48} y suenan,{w=0.15}{cps=60} y suenan,{w=0.1}{cps=72} y suenan,{w=0.1} y suenan,{w=0.1} y suenan,{w=0.1} y suenan,{w=0.1} y suenan."
+    #"Me pregunto si habrá amado como aquellos en las bodas." 
+    #"Hace años dejé de creer en el dios cretino del que tanto me hablaron,{w=0.2} me pregunto{w=0.2} ¿Le habrá rezado?{w=0.2} ¿Se habrá puesto de rodillas ante una ventana y deseado con todas sus fuerzas no morir?"
+    #pav "Perdón..."
+    #pav "Pero si no puedo vivir así"
+    #pav "No puedo vivir en absoluto"
+    #pav "Perdón"
+    #pav "De verdad" 
+    #pav "Perdón"
     jump mapa
 
 label luctus_negatio3:
     nvl clear
-    mar "dale pavel no seas putin"
-    pav "muerete xdxdxd"    
+    #mar "dale pavel no seas putin"
+    #pav "muerete xdxdxd"    

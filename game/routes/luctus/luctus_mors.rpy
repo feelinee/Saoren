@@ -196,7 +196,7 @@
             linear 2.2 ypos 0.16
             repeat
 
-    show side mors1 at left:
+    show lside mors1 at left:
         ypos 1.2
         linear 6.0 ypos 1.4
         block:

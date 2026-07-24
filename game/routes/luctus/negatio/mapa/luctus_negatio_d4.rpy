@@ -1,4 +1,5 @@
 label bosque_d4:
+    nvl clear
     "d4 bosquee"
     #*Pavel entra al bosque y sigue el camino hacia la tumba, pero la evita, no quiere ir ese día.*
     #*Se hacerca a la "puerta", el lugar donde se separaron él y Anaraith… él y marcille.*
