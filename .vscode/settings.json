@@ -11,8 +11,12 @@
         "**/fonts/": true,
         "**/archivos krita/": true,
         "**/*.kra": true,
-        "**/*.png~": true
-    },
+        "**/*.png~": true,
+        "**/audio/":true,
+        "**/.vscode/":true,
+        "**/_mcp/":true,
+        "**/Saoren/":true
+    }
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {

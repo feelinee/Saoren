@@ -15,13 +15,15 @@ label luctus_negatio:
     $ color_mode = "green"
     call set_mode("nadie")
 
-    "El gato me devuelve la mirada, mientras tira de mi unica protección contra los vientos atraidos por la marea y los ojos de los indiscretos atraidos hacia mí, entre mis brazos atenta contra mi paz."
+    play ambience1 "ambiente/seawaves.mp3"  loop fadein 8.0 volume 0.5
+    play ambience2 "ambiente/market.mp3"  loop fadein 8.0  volume 0.3
+    play ambience3 "ambiente/wind.mp3"  loop fadein 8.0 volume 0.2
 
-    "Desenredo sus garras de entre los hilos de la tela, con cuidado de no dañar sus fragiles pero dolorosas garras, pensando en si su asalto fue una respuesta negativa a mi divagar o no más que un pequeño jugueteo."
+    "El gato me mira, ignorante de las divagaciones silenciosas que persiguen mi mente. {w=0.3}Entre mis brazos levanta su pata y atenta contra mi paz;{w=0.25} tira de mi capucha,{w=0.2} el unico refugio que tengo frente a los vientos atraidos por la marea,{w=0.2} y frente los ojos indiscretos atraidos hacia el secreto de mi escondite."
 
-    "A pesar del frío de la tarde que acompaña el pleno otoño, puedo sentir como una calidez comparable con el sol invade mi pecho y se apoya en mis mejillas."
+    "Desenredo su pata de entre los hilos de la tela con cuidado de no dañar sus fragiles pero dolorosas garras.{w=0.3} El pequeño responde con un par maullidos y a pesar del frío de la tarde que acompaña el pleno otoño,{w=0.2} puedo sentir como una calidez comparable con la del sol invade mi pecho y se apoya en mis mejillas."
 
-    "Una pregunta surge de entre los maullidos."
+    "Interrumpiendo el romper de las olas, una pregunta surge de entre los maúllos."
 
     vend "¿Esto es todo?"
 

@@ -13,7 +13,7 @@
 ##
 ## El _() que rodea la cadena de texto la señala como traducible.
 
-define config.name = "{size= 190}SAORÉN\n{size= 65}Sombras de la Libertad"
+define config.name = "Saorén: Sombras de la Libertad"
 
 
 ## Determina si el título dado más arriba se muestra en el menú principal.

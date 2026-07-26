@@ -5,7 +5,7 @@ default color_mode = "default"
 
 ## Defines
 
-define pav = Character("Pavel", kind=nvl)
+define pav = Character("Pavel", kind=nvl, callback=make_type_sound(sounds_default))
 define ana = Character("Anaraith", kind=nvl)
 define mar = Character("Marcille", kind=nvl)
 define asf = Character("Asfodel", kind=nvl)
@@ -13,8 +13,8 @@ define asf = Character("Asfodel", kind=nvl)
 define fau = Character("Fauna", kind=nvl)
 define dios = Character("Dios", kind=nvl)
 define qn = Character("???",  kind=nvl)
-define narrator = Character(None, kind=nvl)
-define vend = Character("Vendedor", kind=nvl)
+define narrator = Character(None, kind=nvl, callback=make_type_sound(sounds_default))
+define vend = Character("Vendedor", kind=nvl, callback=make_type_sound(sounds_default))
 
 define menu = nvl_menu
 
@@ -48,7 +48,7 @@ init -1 python:
     import re
     renpy.music.register_channel("typing", "sfx", loop=False)
 
-    def make_type_sound(sound_list, volume=0.05):
+    def make_type_sound(sound_list, volume=0.0):
         def type_sound(event, interact=True, vol=volume, **kwargs):
             if not interact:
                 return
@@ -61,6 +61,13 @@ init -1 python:
             elif event == "slow_done" or event == "end":
                 renpy.music.stop(channel="typing")
         return type_sound
+
+## Canal ambiente
+
+init python:
+    renpy.music.register_channel('ambience1', "sfx")
+    renpy.music.register_channel('ambience2', "sfx")
+    renpy.music.register_channel('ambience3', "sfx")
 
 ## Pavel Sprites
 
@@ -119,11 +126,14 @@ image scen nega5 = "images/scenes/negatio/scene_negatio_5.png"
 
 # Negatio
 
-image pav nega1= "images/pjs/pavel/pav_nega1.png"
-image mar nega1= "images/pjs/marcille/mar_nega1.png"
+image pav nega1 = "images/pjs/pavel/pav_nega1.png"
+image mar nega1 = "images/pjs/marcille/mar_nega1.png"
 
 ## Cgs
 
 #Mors
 
-image cg mors1="images/cgs/mors/cgs_mors_3.png"
+image cg mors1 = "images/cgs/mors/cgs_mors_3.png"
+
+## Audio
+
