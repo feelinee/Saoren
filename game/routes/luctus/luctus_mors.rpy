@@ -38,7 +38,7 @@
     $ renpy.music.set_volume(0.1, channel="sound")
     "En una noche de lluvia, con las velas casi consumidas y el sonido del agua golpeando el techo de barro, él tomó la mano de su esposa y comenzó a hablar despacio, con el sosiego de un pecador en un confesionario."
     fau "Oh amor mío...{w=0.3} Tenemos un lazo eterno, pero traigo un peso en el corazón que ya no puedo sostener solo."
-    dios"Comparte tu tristeza" 
+    muj"Comparte tu tristeza" 
     "Le respondió ella, sin soltar su mano."
     "La lluvia arrecia al otro lado de la ventana, él asintió, mirando la llama reflejada en el cristal."
     nvl clear
@@ -108,7 +108,10 @@
         linear 40.0 yalign 1.0
     nvl clear
 
-    "El rastro bajo mis pies continua hacia delante,{w=0.3} las marcas de las suelas de un par de zapatos desgastados están enterradas profundas en la nieve,{w=0.3} impresas con \nuna firmeza que me resulta ajena. {w}\n\nLas sigo, {w=0.3}mientras los copos empiezan a caer como\nlluvia hirviendo"
+    "El rastro bajo mis pies continua hacia delante,{w=0.3} las marcas de las suelas de un par de zapatos desgastados están enterradas profundas en la nieve,{w=0.3} impresas con \nuna firmeza que me resulta ajena."
+    play ambience1 "audio/efectos/pisadasnieve.mp3"
+    extend "   \n\nLas sigo, {w=0.3}mientras los copos empiezan a caer como\nlluvia hirviendo"
+    stop ambience1
     $ _history = False
     show lside mors3 at left:
         yalign 0.0
