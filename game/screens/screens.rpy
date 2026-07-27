@@ -290,10 +290,25 @@ style navigation_button_text:
 
 ## Pantalla del menú principal
 
+init python:
+    renpy.music.register_channel("menumusic", mixer="music", loop=True)
+
+default persistent.menu_music_muted = False
+
+init python:
+    def toggle_menu_mute():
+        persistent.menu_music_muted = not persistent.menu_music_muted
+        renpy.music.set_volume(0.0 if persistent.menu_music_muted else 1.0, channel="menumusic")
+
 screen main_menu():
 
     ## Esto asegura que cualquier otra pantalla de menu es remplazada.
     tag menu
+
+    on "show" action [
+        Play("menumusic", "audio/musica/simbiosis.mp3"),
+        Function(renpy.music.set_volume, 0.0 if persistent.menu_music_muted else 0.4, channel="menumusic")
+    ]
 
     add gui.main_menu_background
 
@@ -307,10 +322,16 @@ screen main_menu():
 
     if gui.show_name:
 
+        textbutton _("Silenciar"):
+            action Function(toggle_menu_mute)
+            style "mute_all_button"
+            xpos 1730
+            ypos 20
+
         vbox:
             style "main_menu_vbox"
 
-            text "[config.name!t]":
+            text "{size= 190}SAORÉN\n{size= 65}Sombras de la Libertad":
                 style "main_menu_title"
 
             text "[config.version]":
@@ -344,6 +365,7 @@ style main_menu_title:
 
 style main_menu_version:
     properties gui.text_properties("version")
+
 
 ## Pantalla del menú del juego
 

@@ -19,7 +19,7 @@ label luctus_negatio:
     play ambience2 "ambiente/market.mp3"  loop fadein 8.0  volume 0.3
     play ambience3 "ambiente/wind.mp3"  loop fadein 8.0 volume 0.2
 
-    "El gato me mira, ignorante de las divagaciones silenciosas que persiguen mi mente. {w=0.3}Entre mis brazos levanta su pata y atenta contra mi paz;{w=0.25} tira de mi capucha,{w=0.2} el unico refugio que tengo frente a los vientos atraidos por la marea,{w=0.2} y frente los ojos indiscretos atraidos hacia el secreto de mi escondite."
+    "El gato me mira,{w=0.2} ignorante de las divagaciones silenciosas que persiguen mi mente. {w=0.3}Entre mis brazos levanta su pata y atenta contra mi paz;{w=0.25} tira de mi capucha,{w=0.2} el unico refugio que tengo frente a los vientos atraidos por la marea,{w=0.2} y frente los ojos indiscretos atraidos hacia el secreto de mi escondite."
 
     "Desenredo su pata de entre los hilos de la tela con cuidado de no dañar sus fragiles pero dolorosas garras.{w=0.3} El pequeño responde con un par maullidos y a pesar del frío de la tarde que acompaña el pleno otoño,{w=0.2} puedo sentir como una calidez comparable con la del sol invade mi pecho y se apoya en mis mejillas."
 
@@ -45,7 +45,11 @@ label luctus_negatio:
     call set_mode("nadie")
     "El hombre mira a su alrededor y me indica con la mano que me acerque. Dudoso, hago caso a su petición y pronto me habla entre susurros."
 
-    vend "No sé si lo notaste ya, pero desde hace un rato que alguien te está siguiendo. Si vas a meterte en problemas, hazlo lejos de mi tienda."
+    vend "No sé si lo notaste."
+    vend "No me importa realmente."
+    vend "Pero desde hace un rato que alguien te está siguiendo."
+    vend "Si vas a meterte en problemas, hazlo lejos de mi tienda."
+    vend "Espantas a los clientes."
 
     "Asiento inseguro, y tomo la bolsa del mostrador mientras doy pasos atrás."
     nvl clear

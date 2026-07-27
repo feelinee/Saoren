@@ -57,21 +57,21 @@
     $ renpy.music.set_volume(0.2, channel="sound")
     fau "{cps=50}DIOS ES** *UE*** * *O**TR** L* ***AM**{nw} "
     $ renpy.music.set_volume(0.3, channel="sound")
-    fau "{cps=100}—DI** **T* ****T* Y **S***O* ** M*****S{nw} "
+    fau "{cps=100}DI** **T* ****T* Y **S***O* ** M*****S{nw} "
     $ renpy.music.set_volume(0.4, channel="sound")
-    fau "{cps=150}—*I*S **TA M***** * N******S *O *******{nw} "
+    fau "{cps=150}*I*S **TA M***** * N******S *O *******{nw} "
     $ renpy.music.set_volume(0.5, channel="sound")
-    fau "{cps=200}—**OS **** **R*** * ******** ** *******{nw} "
+    fau "{cps=200}**OS **** **R*** * ******** ** *******{nw} "
     $ renpy.music.set_volume(0.6, channel="sound")
-    fau "{cps=250}—***S **** ****O * ***O**** ** **T****{nw} "
+    fau "{cps=250}***S **** ****O * ***O**** ** **T****{nw} "
     $ renpy.music.set_volume(0.7, channel="sound")
-    fau "{cps=300}—**** *S** ****** * ******** ** *A***O*{nw} "
+    fau "{cps=300}**** *S** ****** * ******** ** *A***O*{nw} "
     $ renpy.music.set_volume(0.8, channel="sound")
-    fau "{cps=350}—**** **** ****** * ******** ** *******{nw} "
+    fau "{cps=350}**** **** ****** * ******** ** *******{nw} "
     $ renpy.music.set_volume(0.9, channel="sound")
-    fau "{cps=450}—**** **** ****** * ******** ** *******{nw} "
+    fau "{cps=450}**** **** ****** * ******** ** *******{nw} "
     $ renpy.music.set_volume(1.0, channel="sound")
-    fau "{cps=500}—**** **** ****** * ******** ** *******{nw} "
+    fau "{cps=500}**** **** ****** * ******** ** *******{nw} "
     $ _history = True
     $ if _history_list: _history_list[-1].what = "La curiosidad mató al gato, y te matara a ti."
     stop sound
@@ -91,7 +91,7 @@
     play audio pageturn volume 1
 
     window hide
-    hide side
+    hide rside
     scene black
     pause 0.5
 
@@ -108,11 +108,11 @@
         linear 40.0 yalign 1.0
     nvl clear
 
-    "El rastro bajo mis pies continua hacia delante,{w=0.3} las marcas de las suelas de un par de zapatos desgastados están enterradas profundas en la nieve,{w=0.3} impresas con \nuna firmeza que me resulta ajena. {w}\n\nLas sigo, {w=0.3}mientras los copos empiezan a caer como\n{cps=50}lluvia {cps=100}hirviendo{nw}"
+    "El rastro bajo mis pies continua hacia delante,{w=0.3} las marcas de las suelas de un par de zapatos desgastados están enterradas profundas en la nieve,{w=0.3} impresas con \nuna firmeza que me resulta ajena. {w}\n\nLas sigo, {w=0.3}mientras los copos empiezan a caer como\nlluvia hirviendo"
     $ _history = False
-    show lside mors3 at left
-    extend "oooooooooooooooooooooooooooooooooooo{cps=200}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=300}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=400}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=500}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=600}\noooooooooooooooooooooooooooooooooooooooooooooooooooo\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=700}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=800}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=900}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=1000}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=1100}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{nw}"
-    hide side mors3
+    show lside mors3 at left:
+        yalign 0.0
+    extend "{cps=100}oooooooooooooooooooooooooooooooooooo{cps=200}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=300}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=400}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=500}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=600}\noooooooooooooooooooooooooooooooooooooooooooooooooooo\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=700}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=800}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=900}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=1000}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{cps=1100}\noooooooooooooooooooooooooooooooooooooooooooooooooooo{nw}"
     scene scen mors7
     show lside mors2 at left:
         linear 100.0 yalign 1.0    
@@ -281,7 +281,7 @@
             linear 2.2 ypos 0.16
             repeat
 
-    show side mors1 at left:
+    show lside mors1 at left:
         ypos 1.4
         block:
             linear 2.2 ypos 1.38

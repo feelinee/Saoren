@@ -11,8 +11,8 @@ init python:
     g.unlock("scen negatio4")
     
 
-screen gallery:
-    tag menu
+screen gallery():
+    tag menus
     add "scen mors1"
     grid 2 2:
         xfill True
@@ -45,7 +45,7 @@ screen gallery:
 
     textbutton "Return" action Return() xalign 0.03 yalign 0.03
 
-screen gallery_bgs:
+screen gallery_bgs():
     
     tag menu
     add "scen negatio4"
@@ -58,7 +58,7 @@ screen gallery_bgs:
 
     textbutton "Return" action ShowMenu("gallery") xalign 0.03 yalign 0.03
 
-screen gallery_cgs:
+screen gallery_cgs():
     tag menu
     add "scen mors8"
     grid 3 2:

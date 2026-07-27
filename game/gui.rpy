@@ -60,7 +60,7 @@ define gui.interface_text_color = '#e4dbb2'
 define gui.text_font = "BoldsPixels.ttf"
 
 ## El tipo de letra de los nombres de personajes
-define gui.name_text_font = "editundo.ttf"
+define gui.name_text_font = "BoldsPixels.ttf"
 
 ## El tipo de letra del texto externo al juego.
 define gui.interface_text_font = "BoldsPixels.ttf"
@@ -69,7 +69,7 @@ define gui.interface_text_font = "BoldsPixels.ttf"
 define gui.text_size = 43
 
 ## El tamaño de los nombres de los personajes
-define gui.name_text_size = 70
+define gui.name_text_size = 43
 
 ## El tamaño del texto en la interfaz.
 define gui.interface_text_size = 33
@@ -101,13 +101,13 @@ define gui.textbox_height = 278
 
 ## Colocación vertical de la caja de texto en la pantalla. 0.0 para la parte
 ## superior, 0.5 para el centro y 1.0 para la parte inferior.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 0.5
 
 
 ## Colocación del nombre del personaje hablante, relativa a la caja de texto.
 ## Puede ser el númerode píxels desde la esquina superior izquierda, o 0.5 para
 ## centrar.
-define gui.name_xpos = 360
+define gui.name_xpos = 0
 define gui.name_ypos = 0
 
 ## La alineación horizontal del nombre del personaje. (0.0 es izquierda, 0.5 es

@@ -5,7 +5,7 @@ label start:
         jump luctus_prologue
 
 label menu_rutas:
-    call mode_medio
+    call set_mode("medio")
     "elige tu ruta bruh"
 
     menu:
