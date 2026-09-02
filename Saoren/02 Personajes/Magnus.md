@@ -42,7 +42,7 @@ Miedo y dolor son el mayor y casi único sentimiento que siente sobre su padre. 
 ## Símbolos
 *(pendiente)*
 
-### 1. "Porque anhelar significa que está fuera de alcance."
+### 1. "Porque anhelar significa que está fuera de tu alcance."
 
 Durante su niñez poco antes de ser asignado oficialmente como Ministri, Magnus descubrió el concepto de «Madre». Un ser cálido y amable, que sentía gran apego hacia sus crías, sus... ¿hijos?.
 
@@ -60,13 +60,13 @@ Un día especialmente nublado, con la espalda adolorida se acerco un poco más. 
 
 Se recostó en su regazo, inestable por su cuerpo tembloroso, inseguro de dónde debía agarrarse y resbaló. 
 
-Un brazo más grande que el suyo detuvo su caída. Apretándolo con fuerza contra si misma, Magnus escucho los latidos en el pecho [[Caithra]] y sintió como se sincronizaba con los suyos.
+Un brazo más grande que el suyo detuvo su caída. Apretándolo con fuerza contra si misma, Magnus escuchó los latidos en el pecho de [[Caithra]] y sintió como se sincronizaba con los suyos.
 
 Asomó su rostro de entre su abrazo, ella aún miraba hacia afuera, ignorando su propio movimiento, actuando como si no hubiera sido ella. Queriendo entender lo que se escondía detrás de ese velo, estiró la mano, anhelando ver sus ojos y conocerla. 
 
 ¿Podría escuchar su voz también? ¿Podría amarlo?
 
-Caithra vio como la oscuridad que cubría su mundo se desvaneció en un momento, las estrellas que parecían pequeños puntos a través de la tela brillaban al otro lado, afuera. Y quedo atónita, casi enamorada mirándolas, como si fuera la primera vez que las veía.
+Caithra vio como la oscuridad que cubría su mundo se desvaneció en un momento, la tela suave que cubria su rostro fue quitada, y las estrellas que parecían pequeños puntos a través de la tela brillaban intensamente al otro lado, afuera. Y quedo atónita, casi enamorada mirándolas, como si fuera la primera vez que las veía. Después de tantos años, tantos así que no se podían contar con los dedos de las manos, pudo sentir el anhelo hacia un "afuera" que ya había olvidado.
 
 Una pequeña mano se posó en su rostro, haciéndola volver en si misma. Movió su vista --ahora esclarecida--, en su dirección. Con este pequeño acto infantil, sintió un poco de compasión por él. Realmente no era más que un niño-
 
