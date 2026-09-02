@@ -5,18 +5,18 @@ default color_mode = "default"
 
 ## Defines
 
-define pav = Character("Pavel", kind=nvl, what_italic=True, who_color="#b2c6e4", what_color="#b2c6e4", what_prefix="- ", who_xsize=130, callback=make_type_sound(sounds_default))
-define ana = Character("Anaraith", kind=nvl, what_italic=True, who_color="#e4dbb2", what_color="#e4dbb2", what_prefix="- ", who_xsize=170)
-define mar = Character("Marcille", kind=nvl, what_italic=True, who_color="#e4b2b2", what_color="#e4b2b2", what_prefix="- ", who_xsize=160)
-define asf = Character("Asfodel", kind=nvl, what_italic=True, who_color="#c9a8e4", what_color="#c9a8e4", what_prefix="- ", who_xsize=150)
+define pav = Character("Pavel", kind=nvl, what_italic=True, who_color="#b2c6e4", what_color="#b2c6e4", what_prefix=": ", who_xsize=130, callback=make_type_sound(sounds_default))
+define ana = Character("Anaraith", kind=nvl, what_italic=True, who_color="#e4dbb2", what_color="#e4dbb2", what_prefix=": ", who_xsize=170)
+define mar = Character("Marcille", kind=nvl, what_italic=True, who_color="#e4b2b2", what_color="#e4b2b2", what_prefix=": ", who_xsize=160)
+define asf = Character("Asfodel", kind=nvl, what_italic=True, who_color="#c9a8e4", what_color="#c9a8e4", what_prefix=": ", who_xsize=150)
  
-define fau = Character("Fauna", kind=nvl, what_italic=True, who_color="#a3eb99", what_color="#a3eb99", what_prefix="- ", who_xsize=63)
-define dios = Character("Dios", kind=nvl, what_italic=True, who_color="#e4d8a8", what_color="#e4d8a8", what_prefix="- ", who_xsize=10)
-define muj = Character("Mujer", kind=nvl, what_italic=True, who_color="#d8b28a", what_color="#d8b28a", what_prefix="- ", who_xsize=160, callback=make_type_sound(sounds_default))
-define vend = Character("Vendedor", kind=nvl, what_italic=True, who_color="#d8b28a", what_color="#d8b28a", what_prefix="- ", who_xsize=160, callback=make_type_sound(sounds_default))
+define fau = Character("Fauna", kind=nvl, what_italic=True, who_color="#a3eb99", what_color="#a3eb99", what_prefix=": ", who_xsize=63)
+define dios = Character("Dios", kind=nvl, what_italic=True, who_color="#e4d8a8", what_color="#e4d8a8", what_prefix=": ", who_xsize=10)
+define muj = Character("Mujer", kind=nvl, what_italic=True, who_color="#d8b28a", what_color="#d8b28a", what_prefix=": ", who_xsize=160, callback=make_type_sound(sounds_default))
+define vend = Character("Vendedor", kind=nvl, what_italic=True, who_color="#d8b28a", what_color="#d8b28a", what_prefix=": ", who_xsize=160, callback=make_type_sound(sounds_default))
 
 define narrator = Character(None, kind=nvl, callback=make_type_sound(sounds_default))
-define qn = Character("???",  kind=nvl, what_italic=True, who_color="#9c9c9c", what_color="#9c9c9c", what_prefix="- ", who_xsize=90)
+define qn = Character("???",  kind=nvl, what_italic=True, who_color="#9c9c9c", what_color="#9c9c9c", what_prefix=": ", who_xsize=90)
  
 define menu = nvl_menu
 
