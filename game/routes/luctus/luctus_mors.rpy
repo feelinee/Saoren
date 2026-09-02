@@ -187,6 +187,7 @@
 
     window hide
     call set_mode("izquierda")
+    play ambience1 "audio/ambiente/fuego.mp3" loop volume 0.6
 
     scene scen mors5:
         ypos -0.05
@@ -262,7 +263,6 @@
             repeat
 
     $ color_mode= "orange"
-    play music armydreamers volume 0.7
     extend "{w=0.2} mi vista está difusa pero su silueta es clara,{w=0.2} mientras la veo a la cara puedo sentir como ella"
     nvl clear
 

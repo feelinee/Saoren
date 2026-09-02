@@ -124,6 +124,8 @@ image scen nega2 = "images/scenes/negatio/scene_negatio_2.png"
 image scen nega3 = "images/scenes/negatio/scene_negatio_3.jpg"
 image scen nega4 = "images/scenes/negatio/scene_negatio_4.png"
 image scen nega5 = "images/scenes/negatio/scene_negatio_5.png"
+image scen nega6 = "images/scenes/negatio/scene_negatio_6.png"
+
 
 ## Pjs
 

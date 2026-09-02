@@ -27,7 +27,7 @@ label luctus_negatio:
 
     vend "¿Esto es todo?"
 
-    "Con un leve empujón, le obligó a bajar de entre mis brazos y terminar nuestro encuentro de corta duración, en el piso empieza a dar vueltas en si mismo persiguiendo su cola, levemente mareado termina su pequeña pirueta y finalmente se apoya en mi pierna."
+    "Miro la Con un leve empujón, le obligó a bajar de entre mis brazos y terminar nuestro encuentro de corta duración, en el piso empieza a dar vueltas en si mismo persiguiendo su cola, levemente mareado termina su pequeña pirueta y finalmente se apoya en mi pierna."
     nvl clear
 
     "¿Cuál es el nombre del gato?"
@@ -66,9 +66,7 @@ label luctus_negatio:
     "— Carne deshidratada{fast}"
     nvl clear
 
-    "Inhalo profundamente el aire frio y este llena mis pulmones, reemplazando el calor que ahí se alojaba. Con un suspiro exhalo, y me imagino una estela de vapor saliendo por mi boca."
-
-    "Solo dos items quedan desmarcados en esta lista... Carne deshidratada y un ramo de flores."
+    "Inhalo profundamente el aire frio y este llena mis pulmones, reemplazando el calor que ahí se alojaba. Con un suspiro exhalo, y me imagino una estela de vapor saliendo por mi boca. {w}Solo dos items quedan desmarcados en esta lista, carne deshidratada y un ramo de flores."
 
     "Miro dudoso el cielo nublado, en este horario la luz duerme más temprano y con su soñar llega la pesadilla de los vivos. Pretendo irme antes de las seis, pero observando el reloj del mercado encuentro imposible esa posibilidad a menos deje alguna de estas cosas pendientes para la semana."
 
@@ -91,31 +89,64 @@ label negatio_carne:
     "Con los ultimos rayos de sol de la tarde y una inceridumbre ominosa acompañandome, tomo una descisión rapido y me dirigo al puesto de carne a pocos metros de mi."
     
     $ color_mode = "orange"
-    scene scen nega4
+    scene scen nega5
 
     "Me tapo la cara con la bufanda cuando empieza a invadir en el ambiente un olor crudo que me hace revolver el estomago. La sangre esparcida en el mostrador ensucia el precio que indica el valor de los cadaveres de los animales que se encuentran a su lado y me tengo que aguantar las ganas de vomitar."
 
-    "Los ojos de las cabezas colgadas miran hacia el piso, y en una fantasia grotesca imagino como desean recuperar su cuerpo y volver a su libertad."
+    "Los ojos de las cabezas colgadas miran hacia el piso, y en una fantasia grotesca imagino como desean recuperar su cuerpo y volver a su libertad. Salir corriendo en esas calles que miran con tanta atención."
 
     "Pero se quedan colgados, y los comparo conmigo."
     
-    "La unica desemejanza que puedo encontrar es que aún estoy respirando." 
-
-    "E incluso así, estos hombres puden elegir si quitarme eso también."
+    "La unica desemejanza que puedo encontrar es que aún estoy respirando. {w}E incluso así, estos hombres puden elegir si quitarme eso también."
 
     vend "¿Vas a comprar algo o te vas a quedar ahí?"
     
     "No me siento como nada más que ganado cuando me miran a los ojos, con la incapacidad de detener su homicidio y ponerle un precio a mis tripas."
+    nvl clear
 
-    "Ojeo lo que hay y apunto a uno de los pedazos, desviando la mirada casi inmediatamente. Le doy unas monedas y me devuelve una bolsa."
+    "Ojeo lo que hay y apunto a uno de los conejos con cuello cortado, el más blanco, el que hace contrastar más la sangre en su pelo. Lanzo las monedas en el mostrador, ensuciandolas también de pecado. El carnicero las toma silencioso antes de dirigirse a otra persona."
 
-    "Con la carne entre las manos me siento un poco más como un humano, puedo controlar el cuerpo inerte de esta criatura como ellos pueden controlar el mio."
+    "Agarro el animal por sus orejas, con la carne entre las manos me siento un poco más como un humano, puedo controlar el cuerpo inerte de esta criatura como ellos pueden controlar el mio. Siento comezón por todo el cuerpo, las miradas de mi cabeza me ponen en un tribunal moral que sé que no puedo ganar. Me doy la vuelta, y la mirada de ese hombre alto entre la multitud se encuentra con la mia."
 
-    "Con mi dinero despediciado "
+    "Intento negar el hecho, una coincidiencia probable entre un mar de ojos, pero mientras la luna sube a su trono, la figura del hombre se acerca. Mis piernas me piden correr, pero como siempre son sordas ante sus propias suplicas."
+
+    "Con pasos temblorosos camino en dirección contraria, dandole la espalda. Quizás si me entierra un cuchillo por detrás, me dolerá más la conmoción que el corte."
+    nvl clear
+
+    stop ambience1
+    stop ambience2
+    stop ambience3
+    $ color_mode = "green"
+    scene scen nega6
+
+    "Subo las escaleras. Ya no sé donde me llevan los pies, quizás a rezar de rodillas clemencia para mi insignificante vida pues, frente a mi, veo ergirse la alta capilla. En la sima de esta pequeña subida, mirando hacia abajo, veo a todas esas personas dando vueltas tontamente sin dirigir su mirada hacia mi."
+    
+    "Me pregunto si asi se sentira ser un dios olvidado."
+
+    "Entre las siluteas que miro, la de aquel hombre no se asoma y respiro tranquilo. Pretendo volver a mi hogar, cuando las palomas retoman su vuelo,"
+
+    window hide
+    scene black
+    play audio "audio/efectos/birdsflap.mp3"
+    pause  2.0
+    $ color_mode = "orange"
+    scene scen nega4 with dissolve
+    pause 1.0
+
+    extend " una mano aprieta con fuerza mi muñeca."
+
+ 
+
+
+    
+
+
 
     return
 
-    #Pavel llega al puesto de carne y compra la comida de gato, nota por el rabillo del ojo a la persona que lo está siguiendo, es bastante alto y aunque no parece tner mucha masa muscular, es suficiente para intimidarlo, decide meterse entre la muchedumbre.
+    ##idea:
+
+    #Pavel llega al puesto de carne y compra, nota por el rabillo del ojo a la persona que lo está siguiendo, es bastante alto y aunque no parece tner mucha masa muscular, es suficiente para intimidarlo, decide meterse entre la muchedumbre.
 
     #Destacando por su altura como la persona lo empieza a buscar con la mirada, por su cara tapada asume que es alguien de la iglesia y que está en peligro.
 
