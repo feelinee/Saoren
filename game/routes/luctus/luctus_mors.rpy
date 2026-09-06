@@ -17,12 +17,11 @@
     "En los dias en que Dios caminaba por esta tierra,{w=0.2} cuando el polvo del camino manchaba sus sandalias como las de cualquier mortal,{w=0.2} se habla una tragedia que pocos se atreven a contar." 
     "La fauna aquella,{w=0.2} criatura fiel entre las criaturas,{w=0.2} lo contemplaba desde la maleza.{w=0.2} En su pecho,{w=0.2} escondia algo que ninguna bestia había sentido antes."
     "Amor{w}, por una hija de hombre,{w=0.2} una mujer de voz suave y manos callosas que olían a tierra mojada."
-    "Desesperado se postró ante los pies de su divinidad y rogó." 
+    "Desesperado el animal se postró ante los pies de su divinidad y rogó." 
     nvl clear
 
-    fau "Oh Señor mío... {w=0.2}por tu divinidad y tu misericordia, concédeme este deseo." 
-    fau "Me he enamorado de una mujer."
-    fau "Yo entiendo cada una de sus palabras, más ella no entiende las mías.{w=0.2} Soy invisible a sus ojos."
+    fau "Oh Señor mío... {w=0.2}por tu misericordia, concédeme este deseo." 
+    fau "Me he enamorado de una mujer.\nYo entiendo cada una de sus palabras, más ella \nno las mías.{w=0.2} Soy invisible ante sus ojos."
     "Y Dios, que conoce el peso de todos los corazones, en compasión se detuvo a comprender."
     nvl clear
     play audio pageturn volume 1
@@ -32,24 +31,24 @@
     dios "No obstante, eres de otra naturaleza, y la \nnaturaleza desconoce la integridad de las\npalabras."
     "Con el crujir de los arboles y el silencio de las rocas acompañandolos como unicos atestiguantes, el señor se agachó lentamente y le susurró a la oreja."
     "Cuando se enderezó, su voz resonó con la gravedad de las cosas eternas." 
-    dios "Este pacto es el precio de tu voz. Como demostración de tu lealtad, jurarás nunca revelar este secreto. Ni a la tierra, ni al agua, ni al ser que más amas."
+    dios "Este pacto es el precio de tu voz. Como demostración de tu lealtad, jurarás nunca revelar este secreto.{w=0.2} Ni a la tierra, ni al agua, ni al ser \nque más amas."
     "Y la bestia juró, partiendo disfrazada de hombre, cargando un nuevo rostro y una promesa consigo."
     nvl clear
     play audio pageturn volume 1
 
-    "Las hojas cayeron al piso,{w=0.2} secas y de un color naranjo caracteristico.{w=0.2} Las estaciones habian pasado,{w=0.2} asi como lo habian hecho los años.{w=0.2} El rio cambio su flujo{w=0.1} y la criatura su destino,{w=0.2} entre sus brazos tenia una bendición de los cielos, un niño con su sangre y una cara semejante a la de su amada."
+    "Las hojas cayeron al piso,{w=0.2} secas y de un color naranjo caracteristico.{w=0.2} Las estaciones habian pasado,{w=0.2} asi como lo habian hecho los años.{w=0.2} El rio cambio su flujo{w=0.1} y la criatura su destino,{w=0.2} entre sus brazos tenia una bendición de los cielos, un niño con su sangre y una cara calcada a la de su amada."
     play sound soundrain loop volume 1.0
     $ renpy.music.set_volume(0.1, channel="sound")
-    "En una noche de lluvia, con las velas casi consumidas y el sonido del agua golpeando el techo de barro, él tomó la mano de su esposa y comenzó a hablar despacio, con el sosiego de un pecador en un confesionario."
+    "En una noche de lluvia, con las velas casi consumidas y el sonido del agua golpeando el techo de barro, él tomó la mano de su esposa y comenzó a hablar despacio."
     fau "Oh amor mío...{w=0.2} Tenemos un lazo eterno, pero traigo un peso en el corazón que ya no puedo sostener solo."
-    muj"Comparte tu tristeza" 
+    muj"Comparte tu tristeza." 
     "Le respondió ella, sin soltar su mano."
-    "La lluvia arrecia al otro lado de la ventana, él asintió, mirando la llama reflejada en el cristal."
+    "La lluvia arrecia al otro lado de la ventana. Él asintió, mirando la llama reflejada en el cristal."
     nvl clear
     play audio pageturn volume 1
      
-    fau "Esta es mi confesión,{w=0.2} yo te amé desde antes de que tú me amaras a mí.{w=0.2} Antes de que supieras mi nombre,{w=0.2} antes de que yo tuviera uno.{w=0.2} Tu sonrisa es mi razón de existir,{w=0.2} porque Dios mismo me concedió el deseo de estar a tu lado."
-    fau "A cambio de esa bendición,{w=0.2} me pidió que guardara su secreto.{w=0.2} Y lo he guardado.{w=0.2} Años he cargado ese silencio como una piedra en el pecho.{w=0.2} Pero mentirte a ti se me hace más pesado aún."
+    fau "Esta es mi confesión,{w=0.2} yo te amé desde antes de que tú me amaras.{w=0.2} Antes de que supieras mi \nnombre,{w=0.2} antes de que yo tuviera uno.{w=0.2} Tu sonrisa es mi razón de existir,{w=0.2} porque Dios mismo me concedió el deseo de estar a tu lado."
+    fau "A cambio de esa bendición,{w=0.2} me pidió que guardara su secreto.{w=0.2} Y lo he guardado.{w=0.2} Años he cargado ese silencio como una piedra en el pecho.{w=0.2} Pero el peso de mentirte es inmensurable."
     "La vela parpadeó."
     fau "Así que lo diré.{w=0.2} Confío en ti, y en que junto a mí, a la tumba te lo llevarás."
     "Sus ojos se encontraron con los de ella en la penumbra,{w=0.2} y él abrió la boca para pronunciar lo que {color=#f00}nunca debía ser pronunciado.{/color}"
@@ -107,7 +106,7 @@
     show lside mors4:
         xalign 0.0 yalign 1.0
     "Puedo escuchar a los árboles hablar."
-    "Pero no escucho sus poesías,{w=0.2} en su lugar resuenan risas que rechinan como una cama vieja y desgastada,{w=0.2} y los golpeteos de las ramas que caen acompasados,{w=0.2} como los pasos de la oscuridad que me persigue detrás."
+    "Pero no oigo sus poesías,{w=0.2} en su lugar resuenan risas que rechinan como una cama vieja y desgastada,{w=0.2} junto a los golpeteos de las ramas que caen acompasados,{w=0.2} como los pasos de la oscuridad que me persigue detrás."
     "En la frondosidad del bosque, la nieve se queda suspendida entre las ramas sin llegar al suelo."
     show lside mors2 at left:
         yalign 0.0
@@ -137,8 +136,6 @@
     show lside mors4 at left:
         yalign 1.0
         linear 40.0 yalign 0.0  
-    "Los árboles dejan de reirse ante las frases silenciosas de los animales, y empiezan a susurrar entre ellos."       
-    "Saben que no diré nada, {w=0.2}que no puedo decir nada. {w}Porque al igual que una bestia traicionera, {w=0.2}estoy maldito con una boca inservible."
 
     $ _history = False
     "De una rama cae un montículo de nieve,\n{nw}"
@@ -149,13 +146,18 @@
     "Como niños luego de la primera nevada, la lanzan buscando mi atención."
     nvl clear
 
-    "—Oye."
+    qn "Oye."
     "Una de las ramas se inclina, {w=0.2}crujiendo."
-    "—¿Por qué sigues pisandolas?"
-    "Abro mi boca para responder, pero no sale más que un sonido ahogado y patetico.{w=0.2} Sujeto mi garganta con ambas manos, intentando calmar el ardor. {w}\n\nLos árboles explotan en carcajadas."
-    "Dejo caer las retoricas infantiles sobre mi cuerpo mientras avanzo.{w=0.2} Las huellas en el piso parecen dar giros incomodos, hasta que se paran y dan la vuelta."
-    "Las risas empiezan a apagarse y los arboles empiezan a separarse más unos de los otros hasta que el bosque se convierte en un claro."
-    "Contrastando con el resto del escenario, {w=0.2}en medio de todo me encuentro con un macizo de flores."
+    qn "¿Por qué sigues pisandolas?"
+    "Abro mi boca para responder, pero no sale más que un sonido ahogado y patetico. Los árboles explotan en carcajadas."
+    play ambience1 "audio/efectos/pisadasnieve.mp3"
+    "Dejo caer las retoricas infantiles sobre mi cuerpo mientras avanzo."
+    "Saben que no diré nada, {w=0.2}que no puedo decir nada. {w}Porque al igual que una bestia traicionera, {w=0.2}estoy maldito con un hocico inservible."
+    nvl clear
+
+    "En mi interminable deambular, las risas empiezan a apagarse y los arboles empiezan a separarse más los unos de los otros, hasta que el bosque se convierte en un claro."
+    stop ambience1
+    "En medio de todo, contrastando con el resto del escenario,{w=0.2} me encuentro con un macizo de flores."
     show lside mors5 at left:
         yalign 0.0
         linear 40.0 yalign 1.0  
@@ -163,9 +165,11 @@
     nvl clear
 
     "Puedo ver la salida desde donde estoy, la nieve blanca y nueva me llama a acercame y poner mi marca."
-    "{size=+20}{cps=11}. . ."
+    "{size=+20}{cps=11}..."
     "{cps=15}Pero me doy la vuelta."
+    play ambience1 "audio/efectos/pisadasnieve.mp3"
     "Hacia ese sendero de pisadas superpuestas, borrosas por la nieve que ya cayó."
+    stop ambience1
         
     scene scen mors1
     nvl clear
@@ -177,7 +181,7 @@
 
     "Me siento desorientado entre una multitud ruidosa, que parece gritar entre murmullos burlas que se sobreponen hasta convertirse en chillidos grotescos." 
     "Gente se mueve a mi lado, empujandose unos a otros tratando ojear el centro.{w=0.2} En un intento de caminar y pasar entre ellos levanto el pie levemente,{w=0.2} pero inmediatamente vuelve a tocar el piso." 
-    "Siento mi cuerpo temblar, y no puedo hacer más que levantar mi mano,{w=0.2} en un movimiento más parecido a un arrastre sobre mi rostro,{w=0.2} que actua como un camino a recorrer para tapar mis orejas y silenciar el mundo."
+    "Siento mi cuerpo temblar, y no puedo hacer más que alzar mi mano,{w=0.2} en un movimiento más parecido a un arrastre sobre mi rostro,{w=0.2} que actua como un camino a recorrer para tapar mis orejas y silenciar el mundo."
     nvl clear
 
     play audio bell volume 0.6
@@ -321,8 +325,9 @@
             repeat
 
     play audio bell volume 0.9
-    "..."
-    "El humo sube y la multitud no se calla,{w=0.2} algo en mi pecho se aprieta como si alguien metiera la mano y cerrara el puño,{w=0.2} y yo sigo sin moverme,{w=0.1} sigo sin moverme, sigo{nw}"
+    "...\n\nEl humo sube y la multitud no se calla,{w=0.2} algo en mi pecho se aprieta como si alguien metiera la mano y cerrara el puño,{w=0.2} y yo sigo sin moverme,{w=0.1} sigo sin moverme,{w=0.1} sigo sin moverme,{w=0.1} sigo sin{nw}"
+    nvl clear
+    "...\n\nEl humo sube y la multitud no se calla,{w=0.2} algo en mi pecho se aprieta como si alguien metiera la mano \ny cerrara el puño,{w=0.2} y yo sigo sin moverme.{fast}"
     "Quiero gritar,{w=0.2} pero las llamas me enfrian los huesos y el humo me quema la garganta convirtiendo las palabras en cenizas."
     "Quiero correr hacia delante, quiero devolverme y huir." 
     "Quiero sacarla de ahí,{w=0.2} tengo que,\n\ntengo que,\n\ntengo que,\n\ntengo que,\n\ntengo que,"

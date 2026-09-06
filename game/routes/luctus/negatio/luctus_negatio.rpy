@@ -16,28 +16,32 @@ label luctus_negatio:
     call set_mode("nadie")
 
     play ambience1 "ambiente/seawaves.mp3"  loop fadein 8.0 volume 0.5
-    play ambience2 "ambiente/market.mp3"  loop fadein 8.0  volume 0.3
+    play ambience2 "ambiente/market.mp3"  loop fadein 8.0  volume 0.1
     play ambience3 "ambiente/wind.mp3"  loop fadein 8.0 volume 0.2
 
-    "El gato me mira,{w=0.2} ignorante de las divagaciones silenciosas que persiguen mi mente. {w=0.3}Entre mis brazos levanta su pata y atenta contra mi paz;{w=0.25} tira de mi capucha,{w=0.2} el unico refugio que tengo frente a los vientos atraidos por la marea,{w=0.2} y frente los ojos indiscretos atraidos hacia el secreto de mi escondite."
+    "El gatito entre mis brazos maulla juguetón. Ignorante de las divagaciones silenciosas que persiguen mi mente, tira de mi capucha, unico refugio frente a los vientos de la tarde atraidos por la marea. Las lámparas recién encendidas por los lamperos parpadean a punto de apagarse, y a pesar de que el sol aún besa la mar, durante un instante el mundo se oscurese un poco, dandome un breve momento para descansar de los ojos indiscretos de la escaza multitud."
 
-    "Desenredo su pata de entre los hilos de la tela con cuidado de no dañar sus fragiles pero dolorosas garras.{w=0.3} El pequeño responde con un par maullidos y a pesar del frío de la tarde que acompaña el pleno otoño,{w=0.2} puedo sentir como una calidez comparable con la del sol invade mi pecho y se apoya en mis mejillas."
+    "Desenredo sus uñas de entre los hilos de la tela con cuidado de no dañar sus fragiles pero dolorosas garras.{w=0.3} El pequeño responde con un par maullidos y a pesar del frío de la tarde que acompaña el pleno otoño,{w=0.2} puedo sentir como una calidez comparable con la del sol invade mi pecho y se apoya en mis mejillas."
 
     "Interrumpiendo el romper de las olas, una pregunta surge de entre los maúllos."
 
     vend "¿Esto es todo?"
 
-    "Miro la Con un leve empujón, le obligó a bajar de entre mis brazos y terminar nuestro encuentro de corta duración, en el piso empieza a dar vueltas en si mismo persiguiendo su cola, levemente mareado termina su pequeña pirueta y finalmente se apoya en mi pierna."
+    "Como un recordatorio de donde estoy parado, el sonido apagado de la multitud invade mis orejas nuevamente."
+
+    $ renpy.music.set_volume(0.3, channel="ambience2")
+    
+    extend " Con un leve empujón, obligo a bajar de entre mis brazos al gato para terminar nuestro encuentro de corta duración. En el piso empieza a dar vueltas en si mismo persiguiendo su cola. Entretenido miro como termina su pequeña pirueta levemente mareado y finalmente se apoya en mi pierna, acompañandome un rato más."
     nvl clear
 
-    "¿Cuál es el nombre del gato?"
+    "¿Cuál es su nombre?"
 
-    "Le quiero preguntar al hombre frente a mí. Abro mi bolso, y busco entre mis cosas un pequeño cuarderno. Arranco una hoja con un mensaje previamente escrito, y lo entrego junto a un par de monedas desgastadas."
+    "Le quiero preguntar al hombre. Abro mi bolso, y busco entre mis cosas un pequeño cuarderno. Arranco una hoja con un mensaje previamente escrito, y lo entrego junto a un par de monedas desgastadas."
     nvl clear
 
     call set_mode("derecha")
     show rside nega1 at right
-    "Gracias."
+    pav "\"Gracias.\""
 
     "Es lo unico que puedo pronunciar sin mi voz."
 
@@ -134,13 +138,6 @@ label negatio_carne:
     pause 1.0
 
     extend " una mano aprieta con fuerza mi muñeca."
-
- 
-
-
-    
-
-
 
     return
 
